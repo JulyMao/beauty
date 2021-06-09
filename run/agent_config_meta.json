@@ -1,0 +1,298 @@
+{
+  "keys": "/Users/maowei/Documents/beauty/config/config.default.js",
+  "middleware": "/Users/maowei/Documents/beauty/config/config.default.js",
+  "session": {
+    "maxAge": "/Users/maowei/Documents/beauty/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/maowei/Documents/beauty/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/maowei/Documents/beauty/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/maowei/Documents/beauty/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/maowei/Documents/beauty/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/maowei/Documents/beauty/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/maowei/Documents/beauty/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/maowei/Documents/beauty/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/maowei/Documents/beauty/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/maowei/Documents/beauty/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/maowei/Documents/beauty/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/maowei/Documents/beauty/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/maowei/Documents/beauty/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/maowei/Documents/beauty/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/maowei/Documents/beauty/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/maowei/Documents/beauty/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/maowei/Documents/beauty/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/maowei/Documents/beauty/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/maowei/Documents/beauty/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/maowei/Documents/beauty/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/maowei/Documents/beauty/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/maowei/Documents/beauty/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/maowei/Documents/beauty/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/maowei/Documents/beauty/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/maowei/Documents/beauty/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/maowei/Documents/beauty/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/maowei/Documents/beauty/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/maowei/Documents/beauty/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/maowei/Documents/beauty/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/maowei/Documents/beauty/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/maowei/Documents/beauty/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/maowei/Documents/beauty/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/maowei/Documents/beauty/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/maowei/Documents/beauty/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/maowei/Documents/beauty/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/maowei/Documents/beauty/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/maowei/Documents/beauty/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/maowei/Documents/beauty/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/maowei/Documents/beauty/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/maowei/Documents/beauty/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/maowei/Documents/beauty/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/maowei/Documents/beauty/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/maowei/Documents/beauty/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/maowei/Documents/beauty/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/maowei/Documents/beauty/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/maowei/Documents/beauty/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/maowei/Documents/beauty/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/maowei/Documents/beauty/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/maowei/Documents/beauty/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "name": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "version": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "description": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "private": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "egg": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "stop": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "dev": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "debug": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "test": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "cov": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "lint": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "ci": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "autod": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "url": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "license": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "strict": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "depth": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "env": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "level": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "logging": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "port": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/maowei/Documents/beauty/node_modules/egg/config/config.default.js"
+}

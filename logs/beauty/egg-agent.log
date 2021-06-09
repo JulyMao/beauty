@@ -1,0 +1,11 @@
+2021-06-09 11:12:05,408 INFO 21983 [egg:logger] init all loggers with options: {"dir":"/Users/maowei/Documents/beauty/logs/beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-06-09 11:12:05,415 INFO 21983 [egg:core] dump config after load, 3ms
+2021-06-09 11:12:05,445 INFO 21983 [egg-watcher] Start watching: ["/Users/maowei/Documents/beauty/app","/Users/maowei/Documents/beauty/config","/Users/maowei/Documents/beauty/mocks","/Users/maowei/Documents/beauty/mocks_proxy","/Users/maowei/Documents/beauty/app.js"]
+2021-06-09 11:12:05,445 INFO 21983 [egg-watcher] Start watching: "/Users/maowei/Documents/beauty/app"
+2021-06-09 11:12:05,446 INFO 21983 [egg-watcher] Start watching: "/Users/maowei/Documents/beauty/config"
+2021-06-09 11:12:05,446 INFO 21983 [egg-watcher] Start watching: "/Users/maowei/Documents/beauty/mocks"
+2021-06-09 11:12:05,446 INFO 21983 [egg-watcher] Start watching: "/Users/maowei/Documents/beauty/mocks_proxy"
+2021-06-09 11:12:05,446 INFO 21983 [egg-watcher] Start watching: "/Users/maowei/Documents/beauty/app.js"
+2021-06-09 11:12:05,446 INFO 21983 [egg-watcher:agent] watcher start success
+2021-06-09 11:12:05,452 INFO 21983 [egg:core] dump config after ready, 3ms
+2021-06-09 11:12:06,017 INFO 21983 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/maowei/Documents/beauty/app/public","stat":{"dev":16777232,"mode":16877,"nlink":2,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":1113036,"size":64,"blocks":0,"atimeMs":1623208326005.0466,"mtimeMs":1623208326005.0466,"ctimeMs":1623208326005.0466,"birthtimeMs":1623208326005.0466,"atime":"2021-06-09T03:12:06.005Z","mtime":"2021-06-09T03:12:06.005Z","ctime":"2021-06-09T03:12:06.005Z","birthtime":"2021-06-09T03:12:06.005Z"},"remove":false,"isDirectory":true,"isFile":false}
