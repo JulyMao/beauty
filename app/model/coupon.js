@@ -1,57 +1,63 @@
 'use strict';
 /*
-  店面表
+  优惠券表
     id:        主键
-    name:   店面名称
-    simple_name:    简称
-    address:  店面地址
-    principal:  负责人
-    phone:  负责人电话
-    correlation_store:  店面关联字段
-    remark:备注
+    store_id:   店面id
+    name:  优惠券名称
+    price:    产品价格
+    times:    可用次数
+    start_dt:   开始时间
+    end_dt: 结束时间
+    describe: 产品描述
+    create_persion_id:  创建人id
 
 */
 const moment = require('moment');
 module.exports = app => {
-  const { INTEGER, STRING, DATE, TEXT } = app.Sequelize;
+  const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
 
-  const Store = app.model.define(
-    'Store', {
+  const Coupon = app.model.define(
+    'Coupon', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
         allowNull: false,
         autoIncrement: true,
       },
+      store_id: {
+        type: INTEGER(11),
+        allowNull: false,
+      },
       name: {
         type: STRING(100),
-        allowNull: true,
-      },
-      simple_name: {
-        type: STRING(50),
-        allowNull: true,
-      },
-      principal: {
-        type: STRING(50),
         allowNull: false,
       },
-      phone: {
-        type: STRING(11),
-        validate: {
-          isEven(value) {
-            if (!/^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$/i.test(value) && value !== null) {
-              throw new Error('请填入正确的手机号！');
-            }
-          },
+      price: {
+        type: DOUBLE,
+        allowNull: true,
+      },
+      times: {
+        type: INTEGER(3),
+        allowNull: true,
+      },
+      start_dt: {
+        type: DATE,
+        get() {
+          return this.getDataValue('start_dt') && moment(this.getDataValue('start_dt')).format('YYYY-MM-DD');
         },
-        allowNull: false,
       },
-      correlation_store: {
-        type: STRING(100),
+      end_dt: {
+        type: DATE,
+        get() {
+          return this.getDataValue('end_dt') && moment(this.getDataValue('end_dt')).format('YYYY-MM-DD');
+        },
+      },
+      describe: {
+        type: TEXT,
         allowNull: true,
       },
-      remake: {
-        type: TEXT,
+      create_persion_id: {
+        type: INTEGER(11),
         allowNull: true,
       },
       updated_at: {
@@ -76,11 +82,12 @@ module.exports = app => {
       timestamps: true,
       paranoid: true,
       freezeTableName: true,
-      tableName: 'store',
+      tableName: 'coupon',
     });
 
-    Store.associate = function() {
+
+    Coupon.associate = function() {
     // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
-  return Store;
+  return Coupon;
 };

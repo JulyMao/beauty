@@ -9,7 +9,8 @@
     sex:    性别
     wx_chat:    微信号
     birthday:  出生日期
-    duty_id:  职务
+    duty_id:  职务(用户分类)
+    admin:  管理员
     remark:备注
 
 
@@ -59,7 +60,6 @@ module.exports = app => {
       },
       birthday: {
         type: DATE,
-        type: DATE,
         get() {
           return this.getDataValue('updated_at') && moment(this.getDataValue('updated_at')).format('YYYY-MM-DD');
         },
@@ -68,6 +68,10 @@ module.exports = app => {
       duty_id: {
         type: INTEGER(11),
         allowNull: true,
+      },
+      admin: {
+        type: INTEGER(1),
+        allowNull: false,
       },
       remake: {
         type: TEXT,

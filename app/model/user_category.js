@@ -1,56 +1,38 @@
 'use strict';
 /*
-  店面表
+  员工分类表
     id:        主键
-    name:   店面名称
-    simple_name:    简称
-    address:  店面地址
-    principal:  负责人
-    phone:  负责人电话
-    correlation_store:  店面关联字段
-    remark:备注
+    store_id:   店面id
+    name: 类型名称
+    create_persion_id: 创建人id
+    describe: 产品描述
 
 */
 const moment = require('moment');
 module.exports = app => {
-  const { INTEGER, STRING, DATE, TEXT } = app.Sequelize;
+  const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
 
-  const Store = app.model.define(
-    'Store', {
+  const User_category = app.model.define(
+    'User_category', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
         allowNull: false,
         autoIncrement: true,
       },
+      store_id: {
+        type: INTEGER(11),
+        allowNull: false,
+      },
       name: {
         type: STRING(100),
-        allowNull: true,
-      },
-      simple_name: {
-        type: STRING(50),
-        allowNull: true,
-      },
-      principal: {
-        type: STRING(50),
         allowNull: false,
       },
-      phone: {
-        type: STRING(11),
-        validate: {
-          isEven(value) {
-            if (!/^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$/i.test(value) && value !== null) {
-              throw new Error('请填入正确的手机号！');
-            }
-          },
-        },
-        allowNull: false,
-      },
-      correlation_store: {
-        type: STRING(100),
+      create_persion_id: {
+        type: INTEGER(11),
         allowNull: true,
       },
-      remake: {
+      describe: {
         type: TEXT,
         allowNull: true,
       },
@@ -76,11 +58,12 @@ module.exports = app => {
       timestamps: true,
       paranoid: true,
       freezeTableName: true,
-      tableName: 'store',
+      tableName: 'user_category',
     });
 
-    Store.associate = function() {
+
+    User_category.associate = function() {
     // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
-  return Store;
+  return User_category;
 };

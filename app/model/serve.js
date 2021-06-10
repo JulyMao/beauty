@@ -1,58 +1,50 @@
 'use strict';
 /*
-  店面表
+  店员服务表
     id:        主键
-    name:   店面名称
-    simple_name:    简称
-    address:  店面地址
-    principal:  负责人
-    phone:  负责人电话
-    correlation_store:  店面关联字段
-    remark:备注
+    store_id:   店面id
+    customer_id:  客户id
+    consume_id:    消费记录id
+    serve_id: 服务店员id
+    apportion_money:    分摊金额 
+    remark: 备注
 
 */
 const moment = require('moment');
 module.exports = app => {
-  const { INTEGER, STRING, DATE, TEXT } = app.Sequelize;
+  const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
 
-  const Store = app.model.define(
-    'Store', {
+  const Serve = app.model.define(
+    'Serve', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
         allowNull: false,
         autoIncrement: true,
       },
-      name: {
-        type: STRING(100),
-        allowNull: true,
-      },
-      simple_name: {
-        type: STRING(50),
-        allowNull: true,
-      },
-      principal: {
-        type: STRING(50),
+      store_id: {
+        type: INTEGER(11),
         allowNull: false,
       },
-      phone: {
-        type: STRING(11),
-        validate: {
-          isEven(value) {
-            if (!/^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$/i.test(value) && value !== null) {
-              throw new Error('请填入正确的手机号！');
-            }
-          },
-        },
+      customer_id: {
+        type: INTEGER(11),
         allowNull: false,
       },
-      correlation_store: {
-        type: STRING(100),
+      consume_id: {
+        type: INTEGER(11),
         allowNull: true,
       },
-      remake: {
+      serve_id: {
+        type: INTEGER(11),
+        allowNull: true,
+      },
+      apportion_money: {
+        type: DOUBLE,
+        allowNull: true,
+      },
+      remarke: {
         type: TEXT,
-        allowNull: true,
+        allowNull: true
       },
       updated_at: {
         type: DATE,
@@ -76,11 +68,12 @@ module.exports = app => {
       timestamps: true,
       paranoid: true,
       freezeTableName: true,
-      tableName: 'store',
+      tableName: 'serve',
     });
 
-    Store.associate = function() {
+
+    Serve.associate = function() {
     // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
-  return Store;
+  return Serve;
 };

@@ -1,20 +1,19 @@
 'use strict';
 /*
-  客户表
+  消费记录表
     id:        主键
     store_id:   店面id
-    name:  姓名
-    phone:    手机号
-    sex:    性别
-    wx_chat:    微信号
-    birthday:  出生日期
-    total_balance:  总余额
-    total_debt: 总欠款
-    is_vip: 是否是会员
-    ticket_num: 消费券个数
-    course_card_num:    疗程卡个数
-    category_id:    客户类别id
-    tag:    客户标签
+    customer_id:  客户id
+    user_id: 员工id
+    vip_or_product:    办卡还是买产品
+    vip_or_product_id:    卡或产品id
+    coupon_id:    优惠券id
+    discount:    折扣数
+    should_money:  应收金额
+    discount_money:  优惠金额
+    real_monry: 实收金额
+    category:   匿名消费还是注册消费
+    pay_type:   支付类型（微信、支付宝、银行卡、现金等）
     remark:备注
 
 
@@ -23,8 +22,8 @@ const moment = require('moment');
 module.exports = app => {
   const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
 
-  const Customer = app.model.define(
-    'Customer', {
+  const Recode_consume = app.model.define(
+    'Recode_consume', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -35,63 +34,49 @@ module.exports = app => {
         type: INTEGER(11),
         allowNull: false,
       },
-      name: {
-        type: STRING(32),
-        allowNull: false,
-      },
-      phone: {
-        type: STRING(11),
-        validate: {
-          isEven(value) {
-            if (!/^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$/i.test(value) && value !== null) {
-              throw new Error('请填入正确的手机号！');
-            }
-          },
-        },
-        allowNull: false,
-      },
-      sex: {
-        type: STRING(10),
-        allowNull: true,
-      },
-      wx_chat: {
-        type: STRING(50),
-        allowNull: true,
-      },
-      birthday: {
-        type: DATE,
-        get() {
-          return this.getDataValue('updated_at') && moment(this.getDataValue('updated_at')).format('YYYY-MM-DD');
-        },
-        allowNull: true,
-      },
-      total_balance: {
-        type: DOUBLE,
-        allowNull: true,
-      },
-      total_debt: {
-        type: DOUBLE,
-        allowNull: true,
-      },
-      is_vip: {
-        type: INTEGER(1),
-        allowNull: false,
-      },
-      ticket_num: {
-        type: INTEGER(3),
-        allowNull: false,
-      },
-      course_card_num: {
-        type: INTEGER(3),
-        allowNull: false,
-      },
-      category_id: {
+      customer_id: {
         type: INTEGER(11),
         allowNull: false,
       },
-      tag: {
-        type: STRING(200),
-        allowNull: false,
+      user_id: {
+        type: INTEGER(11),
+        allowNull: true,
+      },
+      vip_or_product: {
+        type: STRING(20),
+        allowNull: true,
+      },
+      vip_or_product_id: {
+        type: INTEGER(11),
+        allowNull: true,
+      },
+      coupon_id: {
+        type: INTEGER(11),
+        allowNull: true,
+      },
+      discount: {
+        type: DOUBLE,
+        allowNull: true,
+      },
+      should_money: {
+        type: DOUBLE,
+        allowNull: true,
+      },
+      discount_money: {
+        type: DOUBLE,
+        allowNull: true,
+      },
+      real_monry: {
+        type: DOUBLE,
+        allowNull: true,
+      },
+      category: {
+        type: STRING(20),
+        allowNull: true,
+      },
+      pay_type: {
+        type: STRING(20),
+        allowNull: true,
       },
       remake: {
         type: TEXT,
@@ -119,11 +104,12 @@ module.exports = app => {
       timestamps: true,
       paranoid: true,
       freezeTableName: true,
-      tableName: 'customer',
+      tableName: 'recode_consume',
     });
 
-    Customer.associate = function() {
+
+    Recode_consume.associate = function() {
     // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
-  return Customer;
+  return Recode_consume;
 };
