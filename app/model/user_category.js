@@ -12,8 +12,8 @@ const moment = require('moment');
 module.exports = app => {
   const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
 
-  const User_category = app.model.define(
-    'User_category', {
+  const UserCategory = app.model.define(
+    'UserCategory', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -62,8 +62,8 @@ module.exports = app => {
     });
 
 
-    User_category.associate = function() {
+    UserCategory.associate = function() {
     // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
-  return User_category;
+  return UserCategory;
 };

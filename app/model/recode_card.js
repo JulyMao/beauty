@@ -14,8 +14,8 @@ const moment = require('moment');
 module.exports = app => {
   const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
 
-  const Recode_card = app.model.define(
-    'Recode_card', {
+  const RecodeCard = app.model.define(
+    'RecodeCard', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -72,8 +72,8 @@ module.exports = app => {
     });
 
 
-    Recode_card.associate = function() {
+    RecodeCard.associate = function() {
     // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
-  return Recode_card;
+  return RecodeCard;
 };

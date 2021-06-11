@@ -22,8 +22,8 @@ const moment = require('moment');
 module.exports = app => {
   const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
 
-  const Recode_consume = app.model.define(
-    'Recode_consume', {
+  const RecodeConsume = app.model.define(
+    'RecodeConsume', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -108,8 +108,8 @@ module.exports = app => {
     });
 
 
-    Recode_consume.associate = function() {
+    RecodeConsume.associate = function() {
     // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
-  return Recode_consume;
+  return RecodeConsume;
 };

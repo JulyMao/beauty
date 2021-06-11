@@ -7,6 +7,8 @@
     address:  店面地址
     principal:  负责人
     phone:  负责人电话
+    expire_at:  到期时间
+    last_pay_at:  上次续费时间
     correlation_store:  店面关联字段
     remark:备注
 
@@ -45,6 +47,18 @@ module.exports = app => {
           },
         },
         allowNull: false,
+      },
+      expire_at: {
+        type: DATE,
+        get() {
+          return this.getDataValue('expire_at') && moment(this.getDataValue('expire_at')).format('YYYY-MM-DD HH:mm:ss');
+        },
+      },
+      last_pay_at: {
+        type: DATE,
+        get() {
+          return this.getDataValue('last_pay_at') && moment(this.getDataValue('last_pay_at')).format('YYYY-MM-DD HH:mm:ss');
+        },
       },
       correlation_store: {
         type: STRING(100),

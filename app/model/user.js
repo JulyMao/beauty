@@ -10,7 +10,7 @@
     wx_chat:    微信号
     birthday:  出生日期
     duty_id:  职务(用户分类)
-    admin:  管理员
+    is_admin:  管理员  暂定0-店员，1-店长
     remark:备注
 
 
@@ -69,7 +69,7 @@ module.exports = app => {
         type: INTEGER(11),
         allowNull: true,
       },
-      admin: {
+      is_admin: {
         type: INTEGER(1),
         allowNull: false,
       },

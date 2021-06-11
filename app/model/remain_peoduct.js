@@ -12,8 +12,8 @@ const moment = require('moment');
 module.exports = app => {
   const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
 
-  const Remain_product = app.model.define(
-    'Remain_product', {
+  const RemainProduct = app.model.define(
+    'RemainProduct', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -62,8 +62,8 @@ module.exports = app => {
     });
 
 
-    Remain_product.associate = function() {
+    RemainProduct.associate = function() {
     // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
-  return Remain_product;
+  return RemainProduct;
 };

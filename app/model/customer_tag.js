@@ -12,8 +12,8 @@ const moment = require('moment');
 module.exports = app => {
   const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
 
-  const Customer_tag = app.model.define(
-    'Customer_tag', {
+  const CustomerTag = app.model.define(
+    'CustomerTag', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -62,8 +62,8 @@ module.exports = app => {
     });
 
 
-    Customer_tag.associate = function() {
+    CustomerTag.associate = function() {
     // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
-  return Customer_tag;
+  return CustomerTag;
 };
