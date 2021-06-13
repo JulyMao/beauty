@@ -14,6 +14,11 @@ import 'egg-schedule';
 import 'egg-static';
 import 'egg-jsonp';
 import 'egg-view';
+import 'egg-sequelize';
+import 'egg-jwt';
+import 'egg-passport';
+import 'egg-validate';
+import 'egg-router-plus';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -29,5 +34,10 @@ declare module 'egg' {
     static?: EggPluginItem;
     jsonp?: EggPluginItem;
     view?: EggPluginItem;
+    sequelize?: EggPluginItem;
+    jwt?: EggPluginItem;
+    passport?: EggPluginItem;
+    validate?: EggPluginItem;
+    routerPlus?: EggPluginItem;
   }
 }

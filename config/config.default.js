@@ -20,11 +20,11 @@ config.middleware = [ 'errorHandler' ];
 // sequelize数据库配置
 config.sequelize = {
   dialect: 'mysql',
-  database: process.env.DB_DATABASE || 'fish_manage_api',
+  database: process.env.DB_DATABASE || 'beauty_manage',
   host: process.env.DB_HOST || '127.0.0.1',
   port: process.env.DB_PORT || '3306',
   username: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
+  password: process.env.DB_PASSWORD || 'root',
   charset: 'utf8',
   collate: 'utf8_general_ci',
   timezone: 'Asia/Shanghai',

@@ -1,0 +1,408 @@
+2021-06-13 18:35:09,160 INFO 17556 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 18:54:44,043 INFO 17556 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 18:54:44' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 18:54:44,056 ERROR 17556 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: moment(...).add(...).calendar.format is not a function
+    at StoreController.register (G:\project\beauty\app\controller\store.js:24:103)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 17556
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 18:57:12,616 INFO 17240 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 18:57:18,397 INFO 17240 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 18:57:18' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 18:57:18,408 ERROR 17240 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: moment(...).add(...).calendar.format is not a function
+    at StoreController.register (G:\project\beauty\app\controller\store.js:24:104)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 17240
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 18:58:32,196 INFO 11428 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 18:58:33,774 INFO 16200 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 18:58:36,603 INFO 16200 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 18:58:36' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 18:58:36,613 ERROR 16200 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:26:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 16200
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:02:15,476 INFO 7600 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:02:17,079 INFO 13196 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:02:22,666 INFO 13196 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:02:22' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:02:22,676 ERROR 13196 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:27:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 13196
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:04:28,414 INFO 18340 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:04:33,526 INFO 18340 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:04:33' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:04:33,542 ERROR 18340 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:28:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 18340
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:09:03,604 INFO 19128 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:09:05,281 INFO 19760 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:09:11,357 INFO 19760 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:09:11' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:09:11,365 ERROR 19760 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: app is not defined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:24:21)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 19760
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:09:38,893 INFO 20296 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:09:42,595 INFO 20296 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:09:42' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:09:42,607 ERROR 20296 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:28:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 20296
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:12:40,322 INFO 15316 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:15:37,808 INFO 13180 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:15:44,019 INFO 13180 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `store` WHERE ((`store`.`deleted_at` > '2021-06-13 19:15:44' OR `store`.`deleted_at` IS NULL) AND `store`.`phone` = 13625642670);
+2021-06-13 19:15:44,029 ERROR 13180 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:28:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 13180
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:15:51,863 INFO 13556 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:19:38,235 INFO 14184 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:19:39,725 INFO 10224 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:20:46,359 INFO 10164 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:20:50,626 INFO 19888 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:20:54,248 INFO 19888 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:20:54' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:20:54,729 INFO 19888 [egg-sequelize](8ms) Executed (default): INSERT INTO `store` (`id`,`name`,`simple_name`,`principal`,`phone`,`expire_at`,`last_pay_at`,`correlation_store`,`updated_at`,`created_at`) VALUES (DEFAULT,'毛毛美容医疗有效公司','毛毛美容院','毛毛',13625642670,'2022-06-13 08:00:00','2021-06-13 08:00:00','','2021-06-13 19:20:54','2021-06-13 19:20:54');
+2021-06-13 19:20:54,753 ERROR 19888 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: body.phone.substring is not a function
+    at StoreController.register (G:\project\beauty\app\controller\store.js:33:110)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 19888
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:24:07,868 INFO 14464 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:24:13,842 INFO 14464 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:24:13' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:24:14,337 INFO 14464 [egg-sequelize](2ms) Executed (default): INSERT INTO `store` (`id`,`name`,`simple_name`,`principal`,`phone`,`expire_at`,`last_pay_at`,`correlation_store`,`updated_at`,`created_at`) VALUES (DEFAULT,'毛毛美容医疗有效公司','毛毛美容院','毛毛',13625642670,'2022-06-13 08:00:00','2021-06-13 08:00:00','','2021-06-13 19:24:14','2021-06-13 19:24:14');
+2021-06-13 19:24:14,365 ERROR 14464 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: body.phone.substr is not a function
+    at StoreController.register (G:\project\beauty\app\controller\store.js:33:110)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 14464
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:26:39,193 INFO 20248 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:26:47,388 INFO 20248 [egg-sequelize](9ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:26:47' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:26:47,841 INFO 20248 [egg-sequelize](8ms) Executed (default): INSERT INTO `store` (`id`,`name`,`simple_name`,`principal`,`phone`,`expire_at`,`last_pay_at`,`correlation_store`,`updated_at`,`created_at`) VALUES (DEFAULT,'毛毛美容医疗有效公司','毛毛美容院','毛毛',13625642670,'2022-06-13 08:00:00','2021-06-13 08:00:00','','2021-06-13 19:26:47','2021-06-13 19:26:47');
+2021-06-13 19:26:47,885 WARN 20248 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: User.store_id cannot be null,
+notNull Violation: User.phone cannot be null,
+notNull Violation: User.is_admin cannot be null
+notNull Violation: User.phone cannot be null,
+notNull Violation: User.is_admin cannot be null
+    at G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:74:15
+From previous event:
+    at InstanceValidator._validate (G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:107:14
+    at processImmediate (internal/timers.js:462:21)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (G:\project\beauty\node_modules\sequelize\lib\model.js:3823:49)
+    at G:\project\beauty\node_modules\sequelize\lib\model.js:3600:21
+From previous event:
+    at model.save (G:\project\beauty\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (G:\project\beauty\node_modules\sequelize\lib\model.js:2023:8)
+    at StoreController.register (G:\project\beauty\app\controller\store.js:33:30)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+name: "SequelizeValidationError"
+errors: [{"message":"User.store_id cannot be null","type":"notNull Violation","path":"store_id","value":null,"origin":"CORE","instance":{"birthday":"2021-06-13","updated_at":"2021-06-13 19:26:47","created_at":"2021-06-13 19:26:47","id":null,"username":"毛毛","password":"642670"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"User.phone cannot be null","type":"notNull Violation","path":"phone","value":null,"origin":"CORE","instance":{"birthday":"2021-06-13","updated_at":"2021-06-13 19:26:47","created_at":"2021-06-13 19:26:47","id":null,"username":"毛毛","password":"642670"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"User.is_admin cannot be null","type":"notNull Violation","path":"is_admin","value":null,"origin":"CORE","instance":{"birthday":"2021-06-13","updated_at":"2021-06-13 19:26:47","created_at":"2021-06-13 19:26:47","id":null,"username":"毛毛","password":"642670"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+status: 400
+pid: 20248
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:27:57,821 INFO 20248 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:27:57' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:29:32,164 INFO 9064 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:29:33,732 INFO 14276 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:29:50,106 INFO 9064 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:30:01,862 INFO 9064 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:30:01' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:30:01,873 INFO 9064 [egg-sequelize](2ms) Executed (default): INSERT INTO `store` (`id`,`name`,`simple_name`,`principal`,`phone`,`expire_at`,`last_pay_at`,`correlation_store`,`updated_at`,`created_at`) VALUES (DEFAULT,'毛毛美容医疗有效公司','毛毛美容院','毛毛',13625642670,'2022-06-13 08:00:00','2021-06-13 08:00:00','','2021-06-13 19:30:01','2021-06-13 19:30:01');
+2021-06-13 19:30:01,914 WARN 9064 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: User.phone cannot be null,
+notNull Violation: User.is_admin cannot be null
+notNull Violation: User.is_admin cannot be null
+    at G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:74:15
+From previous event:
+    at InstanceValidator._validate (G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:107:14
+    at processImmediate (internal/timers.js:462:21)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (G:\project\beauty\node_modules\sequelize\lib\model.js:3823:49)
+    at G:\project\beauty\node_modules\sequelize\lib\model.js:3600:21
+From previous event:
+    at model.save (G:\project\beauty\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (G:\project\beauty\node_modules\sequelize\lib\model.js:2023:8)
+    at StoreController.register (G:\project\beauty\app\controller\store.js:31:30)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+name: "SequelizeValidationError"
+errors: [{"message":"User.phone cannot be null","type":"notNull Violation","path":"phone","value":null,"origin":"CORE","instance":{"birthday":"2021-06-13","updated_at":"2021-06-13 19:30:01","created_at":"2021-06-13 19:30:01","id":null,"store_id":4,"username":"毛毛","password":"642670"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"User.is_admin cannot be null","type":"notNull Violation","path":"is_admin","value":null,"origin":"CORE","instance":{"birthday":"2021-06-13","updated_at":"2021-06-13 19:30:01","created_at":"2021-06-13 19:30:01","id":null,"store_id":4,"username":"毛毛","password":"642670"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+status: 400
+pid: 9064
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:30:08,529 INFO 17560 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:30:14,265 INFO 17560 [egg-sequelize](3ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:30:14' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:30:27,567 INFO 17560 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:30:27' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:30:27,584 INFO 17560 [egg-sequelize](7ms) Executed (default): INSERT INTO `store` (`id`,`name`,`simple_name`,`principal`,`phone`,`expire_at`,`last_pay_at`,`correlation_store`,`updated_at`,`created_at`) VALUES (DEFAULT,'毛毛美容医疗有效公司','毛毛美容院','毛毛',13625642670,'2022-06-13 08:00:00','2021-06-13 08:00:00','','2021-06-13 19:30:27','2021-06-13 19:30:27');
+2021-06-13 19:30:27,620 WARN 17560 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: User.phone cannot be null,
+notNull Violation: User.is_admin cannot be null
+notNull Violation: User.is_admin cannot be null
+    at G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:74:15
+From previous event:
+    at InstanceValidator._validate (G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:107:14
+    at processImmediate (internal/timers.js:462:21)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (G:\project\beauty\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (G:\project\beauty\node_modules\sequelize\lib\model.js:3823:49)
+    at G:\project\beauty\node_modules\sequelize\lib\model.js:3600:21
+From previous event:
+    at model.save (G:\project\beauty\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (G:\project\beauty\node_modules\sequelize\lib\model.js:2023:8)
+    at StoreController.register (G:\project\beauty\app\controller\store.js:31:30)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+name: "SequelizeValidationError"
+errors: [{"message":"User.phone cannot be null","type":"notNull Violation","path":"phone","value":null,"origin":"CORE","instance":{"birthday":"2021-06-13","updated_at":"2021-06-13 19:30:27","created_at":"2021-06-13 19:30:27","id":null,"store_id":5,"username":"毛毛","password":"642670"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"User.is_admin cannot be null","type":"notNull Violation","path":"is_admin","value":null,"origin":"CORE","instance":{"birthday":"2021-06-13","updated_at":"2021-06-13 19:30:27","created_at":"2021-06-13 19:30:27","id":null,"store_id":5,"username":"毛毛","password":"642670"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+status: 400
+pid: 17560
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:32:21,023 INFO 3808 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:32:30,338 INFO 3340 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:32:34,807 INFO 2592 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:32:53,795 INFO 2592 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:32:53' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 13625642670);
+2021-06-13 19:32:53,811 INFO 2592 [egg-sequelize](7ms) Executed (default): INSERT INTO `store` (`id`,`name`,`simple_name`,`principal`,`phone`,`expire_at`,`last_pay_at`,`correlation_store`,`updated_at`,`created_at`) VALUES (DEFAULT,'毛毛美容医疗有效公司','毛毛美容院','毛毛',13625642670,'2022-06-13 08:00:00','2021-06-13 08:00:00','','2021-06-13 19:32:53','2021-06-13 19:32:53');
+2021-06-13 19:32:53,839 INFO 2592 [egg-sequelize](7ms) Executed (default): INSERT INTO `user` (`id`,`store_id`,`username`,`password`,`phone`,`is_admin`,`updated_at`,`created_at`) VALUES (DEFAULT,6,'毛毛','642670',13625642670,1,'2021-06-13 19:32:53','2021-06-13 19:32:53');
+2021-06-13 19:32:53,846 INFO 2592 [egg-sequelize](3ms) Executed (default): INSERT INTO `user_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,6,'店长',-1,'','2021-06-13 19:32:53','2021-06-13 19:32:53');
+2021-06-13 19:32:53,853 INFO 2592 [egg-sequelize](2ms) Executed (default): INSERT INTO `user_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,6,'前台',-1,'','2021-06-13 19:32:53','2021-06-13 19:32:53');
+2021-06-13 19:32:53,860 INFO 2592 [egg-sequelize](1ms) Executed (default): INSERT INTO `user_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,6,'美容师',-1,'','2021-06-13 19:32:53','2021-06-13 19:32:53');
+2021-06-13 19:32:53,868 INFO 2592 [egg-sequelize](5ms) Executed (default): INSERT INTO `product_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,6,'普通产品',-1,'','2021-06-13 19:32:53','2021-06-13 19:32:53');
+2021-06-13 19:32:53,876 INFO 2592 [egg-sequelize](2ms) Executed (default): INSERT INTO `product_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,6,'疗程卡',-1,'','2021-06-13 19:32:53','2021-06-13 19:32:53');
+2021-06-13 19:32:53,882 INFO 2592 [egg-sequelize](2ms) Executed (default): INSERT INTO `product_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,6,'套卡',-1,'','2021-06-13 19:32:53','2021-06-13 19:32:53');
+2021-06-13 19:35:48,571 INFO 2592 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `store` AS `Store` WHERE ((`Store`.`deleted_at` > '2021-06-13 19:35:48' OR `Store`.`deleted_at` IS NULL) AND `Store`.`phone` = 18888888888);
+2021-06-13 19:35:48,583 INFO 2592 [egg-sequelize](7ms) Executed (default): INSERT INTO `store` (`id`,`name`,`simple_name`,`principal`,`phone`,`expire_at`,`last_pay_at`,`correlation_store`,`updated_at`,`created_at`) VALUES (DEFAULT,'张美丽美容院','张美丽美容院','张美丽',18888888888,'2022-06-13 08:00:00','2021-06-13 08:00:00','','2021-06-13 19:35:48','2021-06-13 19:35:48');
+2021-06-13 19:35:48,613 INFO 2592 [egg-sequelize](4ms) Executed (default): INSERT INTO `user` (`id`,`store_id`,`username`,`password`,`phone`,`is_admin`,`updated_at`,`created_at`) VALUES (DEFAULT,7,'张美丽','888888',18888888888,1,'2021-06-13 19:35:48','2021-06-13 19:35:48');
+2021-06-13 19:35:48,623 INFO 2592 [egg-sequelize](3ms) Executed (default): INSERT INTO `user_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,7,'店长',-1,'','2021-06-13 19:35:48','2021-06-13 19:35:48');
+2021-06-13 19:35:48,631 INFO 2592 [egg-sequelize](2ms) Executed (default): INSERT INTO `user_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,7,'前台',-1,'','2021-06-13 19:35:48','2021-06-13 19:35:48');
+2021-06-13 19:35:48,640 INFO 2592 [egg-sequelize](2ms) Executed (default): INSERT INTO `user_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,7,'美容师',-1,'','2021-06-13 19:35:48','2021-06-13 19:35:48');
+2021-06-13 19:35:48,650 INFO 2592 [egg-sequelize](5ms) Executed (default): INSERT INTO `product_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,7,'普通产品',-1,'','2021-06-13 19:35:48','2021-06-13 19:35:48');
+2021-06-13 19:35:48,657 INFO 2592 [egg-sequelize](2ms) Executed (default): INSERT INTO `product_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,7,'疗程卡',-1,'','2021-06-13 19:35:48','2021-06-13 19:35:48');
+2021-06-13 19:35:48,663 INFO 2592 [egg-sequelize](1ms) Executed (default): INSERT INTO `product_category` (`id`,`store_id`,`name`,`create_persion_id`,`describe`,`updated_at`,`created_at`) VALUES (DEFAULT,7,'套卡',-1,'','2021-06-13 19:35:48','2021-06-13 19:35:48');
+2021-06-13 19:37:30,551 INFO 16732 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:37:32,099 INFO 17388 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:39:57,662 INFO 17388 [egg-sequelize](2ms) Executed (default): SELECT `id`, `store_id`, `username`, `password`, `phone`, `sex`, `wx_chat`, `birthday`, `duty_id`, `is_admin`, `remake`, `updated_at`, `created_at`, `deleted_at` FROM `user` AS `User` WHERE ((`User`.`deleted_at` > '2021-06-13 19:39:57' OR `User`.`deleted_at` IS NULL) AND (`User`.`username` = NULL AND `User`.`password` = '642670')) LIMIT 1;
+2021-06-13 19:39:57,667 INFO 17388 [egg-sequelize](1ms) Executed (default): SELECT `id`, `store_id`, `username`, `password`, `phone`, `sex`, `wx_chat`, `birthday`, `duty_id`, `is_admin`, `remake`, `updated_at`, `created_at`, `deleted_at` FROM `user` AS `User` WHERE ((`User`.`deleted_at` > '2021-06-13 19:39:57' OR `User`.`deleted_at` IS NULL) AND (`User`.`phone` = NULL AND `User`.`password` = '642670')) LIMIT 1;
+2021-06-13 19:40:48,269 INFO 19724 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:40:50,165 INFO 19724 [egg-sequelize](2ms) Executed (default): SELECT `id`, `store_id`, `username`, `password`, `phone`, `sex`, `wx_chat`, `birthday`, `duty_id`, `is_admin`, `remake`, `updated_at`, `created_at`, `deleted_at` FROM `user` AS `User` WHERE ((`User`.`deleted_at` > '2021-06-13 19:40:50' OR `User`.`deleted_at` IS NULL) AND (`User`.`username` = NULL AND `User`.`password` = '642670')) LIMIT 1;
+2021-06-13 19:40:50,169 INFO 19724 [egg-sequelize](0ms) Executed (default): SELECT `id`, `store_id`, `username`, `password`, `phone`, `sex`, `wx_chat`, `birthday`, `duty_id`, `is_admin`, `remake`, `updated_at`, `created_at`, `deleted_at` FROM `user` AS `User` WHERE ((`User`.`deleted_at` > '2021-06-13 19:40:50' OR `User`.`deleted_at` IS NULL) AND (`User`.`phone` = NULL AND `User`.`password` = '642670')) LIMIT 1;
+2021-06-13 19:40:55,511 INFO 18048 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:41:22,946 INFO 18048 [egg-sequelize](2ms) Executed (default): SELECT `id`, `store_id`, `username`, `password`, `phone`, `sex`, `wx_chat`, `birthday`, `duty_id`, `is_admin`, `remake`, `updated_at`, `created_at`, `deleted_at` FROM `user` AS `User` WHERE ((`User`.`deleted_at` > '2021-06-13 19:41:22' OR `User`.`deleted_at` IS NULL) AND (`User`.`username` = 13625642670 AND `User`.`password` = '642670')) LIMIT 1;
+2021-06-13 19:41:22,954 INFO 18048 [egg-sequelize](4ms) Executed (default): SELECT `id`, `store_id`, `username`, `password`, `phone`, `sex`, `wx_chat`, `birthday`, `duty_id`, `is_admin`, `remake`, `updated_at`, `created_at`, `deleted_at` FROM `user` AS `User` WHERE ((`User`.`deleted_at` > '2021-06-13 19:41:22' OR `User`.`deleted_at` IS NULL) AND (`User`.`phone` = 13625642670 AND `User`.`password` = '642670')) LIMIT 1;
+2021-06-13 19:41:22,964 INFO 18048 [egg-sequelize](1ms) Executed (default): SELECT `id`, `store_id`, `username`, `password`, `phone`, `sex`, `wx_chat`, `birthday`, `duty_id`, `is_admin`, `remake`, `updated_at`, `created_at`, `deleted_at` FROM `user` AS `User` WHERE ((`User`.`deleted_at` > '2021-06-13 19:41:22' OR `User`.`deleted_at` IS NULL) AND ((`User`.`phone` = 13625642670 OR `User`.`username` = 13625642670) AND `User`.`password` = '642670')) LIMIT 1;
+2021-06-13 19:42:08,761 INFO 17244 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2021-06-13 19:42:40,210 INFO 17244 [egg-sequelize](4ms) Executed (default): SELECT `id`, `store_id`, `username`, `password`, `phone`, `sex`, `wx_chat`, `birthday`, `duty_id`, `is_admin`, `remake`, `updated_at`, `created_at`, `deleted_at` FROM `user` AS `User` WHERE ((`User`.`deleted_at` > '2021-06-13 19:42:40' OR `User`.`deleted_at` IS NULL) AND `User`.`id` = 1);
+2021-06-13 19:42:43,497 WARN 17244 [-/127.0.0.1/-/1ms GET /] nodejs.AuthenticationError: 请先登录
+    at allFailed (G:\project\beauty\node_modules\egg-passport\node_modules\passport\lib\middleware\authenticate.js:159:21)
+    at attempt (G:\project\beauty\node_modules\egg-passport\node_modules\passport\lib\middleware\authenticate.js:167:28)
+    at JwtStrategy.strategy.fail (G:\project\beauty\node_modules\egg-passport\node_modules\passport\lib\middleware\authenticate.js:284:9)
+    at JwtStrategy.authenticate (G:\project\beauty\node_modules\passport-jwt\lib\strategy.js:96:21)
+    at attempt (G:\project\beauty\node_modules\egg-passport\node_modules\passport\lib\middleware\authenticate.js:348:16)
+    at authenticate (G:\project\beauty\node_modules\egg-passport\node_modules\passport\lib\middleware\authenticate.js:349:7)
+    at G:\project\beauty\node_modules\egg-passport\lib\framework.js:83:7
+    at new Promise (<anonymous>)
+    at passportAuthenticate (G:\project\beauty\node_modules\egg-passport\lib\framework.js:77:11)
+    at dispatch (G:\project\beauty\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\project\beauty\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at G:\project\beauty\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (G:\project\beauty\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at G:\project\beauty\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\project\beauty\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at G:\project\beauty\app\middleware\error_handler.js:9:13
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at passportSession (G:\project\beauty\node_modules\egg-passport\lib\framework.js:59:12)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at passportInitialize (G:\project\beauty\node_modules\egg-passport\lib\framework.js:36:12)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at i18n (G:\project\beauty\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at dta (G:\project\beauty\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at notAllow (G:\project\beauty\node_modules\egg-security\lib\middlewares\methodnoallow.js:21:12)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at G:\project\beauty\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at session (G:\project\beauty\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (G:\project\beauty\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\project\beauty\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+name: "AuthenticationError"
+message: "请先登录"
+status: 401
+pid: 17244
+hostname: DESKTOP-BH9JD8B
+

@@ -1,21 +1,21 @@
 'use strict';
 /*
-  划卡记录表
+  产品分类表
     id:        主键
     store_id:   店面id
-    customer_id:  客户id
-    user_id: 员工id
-    serve_id:   服务员工id
-    product_id:    产品id
-    remark:备注
+    name: 类型名称
+    create_persion_id: 创建人id
+    describe: 产品描述
 
 */
 const moment = require('moment');
-module.exports = app => {
-  const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
+'use strict';
 
-  const RecodeCard = app.model.define(
-    'RecodeCard', {
+module.exports = {
+  // 在执行数据库升级时调用的函数，创建 users 表
+  up: async (queryInterface, Sequelize) => {
+    const { INTEGER, STRING, DATE, TEXT, DOUBLE } = Sequelize;
+    await queryInterface.createTable( 'product_category', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -26,23 +26,15 @@ module.exports = app => {
         type: INTEGER(11),
         allowNull: false,
       },
-      customer_id: {
-        type: INTEGER(11),
+      name: {
+        type: STRING(100),
         allowNull: false,
       },
-      user_id: {
+      create_persion_id: {
         type: INTEGER(11),
         allowNull: true,
       },
-      serve_id: {
-        type: INTEGER(11),
-        allowNull: true,
-      },
-      product_id: {
-        type: INTEGER(11),
-        allowNull: true,
-      },
-      remake: {
+      describe: {
         type: TEXT,
         allowNull: true,
       },
@@ -64,16 +56,9 @@ module.exports = app => {
           return this.getDataValue('deleted_at') && moment(this.getDataValue('deleted_at')).format('YYYY-MM-DD HH:mm:ss');
         },
       },
-    }, {
-      timestamps: true,
-      paranoid: true,
-      freezeTableName: true,
-      tableName: 'recode_card',
     });
-
-
-    RecodeCard.associate = function() {
-    // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
-  };
-  return RecodeCard;
+  },
+  down: async queryInterface => {
+    await queryInterface.dropTable('product_category');
+  },
 };

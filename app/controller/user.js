@@ -14,7 +14,7 @@ class UserController extends Controller {
 
     const { user } = ctx;
     const { token } = user;
-    let res = _.pick(user.toJSON(), [ 'id', 'username', 'phone', 'is_admin' ]);
+    let res = _.pick(user.toJSON(), [ 'id', 'username', 'phone' ]);
     res = Object.assign(res, { token });
     return success({ ctx, res });
   }
@@ -49,20 +49,21 @@ class UserController extends Controller {
     if (phoneExists) {
       return fail({ ctx, code: 400, msg: '手机号已存在' });
     }
-    const where = { username: body.username, phone: body.phone, is_admin: body.is_admin, password: body.password };
+    const is_admin = null;
+    const dutyInfo = await common.findOne({ modelName: 'UserCategory', where: { store_id: userInfo.store_id,id: body.duty_id } })
+    if (dutyInfo.name === '店长'){
+      is_admin = 1;
+    } else {
+      is_admin = 0;
+    }
+    const where = { store_id: userInfo.store_id, username: body.username, phone: body.phone, password: body.password, sex: body.sex, wx_chat: body.wx_chat,birthday: body.birthday
+                    ,duty_id: body.duty_id, is_admin: is_admin };
     const res = await user.addUser(where);
-    console.log(res);
-    if (!res) {
-      return fail({ ctx, code: 400, msg: '添加失败' });
-    }
-    if (res.is_admin === 0) {
-      common.findOrCreate({ modelName: 'Info', where: { user_id: res.id, phone: res.phone, username: res.username } });
-    }
     return success({ ctx, res });
   }
   /**
-          * 删除用户
-          */
+  * 删除用户
+  */
 
   async delUser() {
     const { ctx } = this;
@@ -82,8 +83,8 @@ class UserController extends Controller {
     return success({ ctx, msg: '删除成功' });
   }
   /**
-                                                                                                        * 修改用户信息
-                                                                                                        */
+  * 修改用户信息
+   */
 
   async patchUser() {
     const { ctx } = this;
@@ -102,20 +103,24 @@ class UserController extends Controller {
         return fail({ ctx, code: 400, msg: '手机号已存在，请更换手机号' });
       }
     }
-
-    const attributes = _.pick(body, [ 'username', 'password', 'phone' ]);
-    const [ res, resInfo ] = await Promise.all([
-      common.update({ modelName: 'User', where: { id }, attributes }),
-      common.update({ modelName: 'Info', where: { user_id: id }, attributes: { username: body.username, phone: body.phone } }),
-    ]);
-    if (!res && !resInfo) {
+    const is_admin = null;
+    const dutyInfo = await common.findOne({ modelName: 'UserCategory', where: { store_id: userInfo.store_id,id: body.duty_id } })
+    if (dutyInfo.name === '店长'){
+      is_admin = 1;
+    } else {
+      is_admin = 0;
+    }
+    const attributes = { username: body.username, phone: body.phone, password: body.password, sex: body.sex, wx_chat: body.wx_chat,birthday: body.birthday
+      ,duty_id: body.duty_id, is_admin: is_admin };
+    const res = await common.update({ modelName: 'User', where: { id }, attributes });
+    if (!res) {
       return fail({ ctx, msg: '修改信息失败' });
     }
     return success({ ctx, res });
   }
   /**
-          * 换绑手机号
-          */
+  * 换绑手机号
+  */
 
   async patchPhone() {
     const { ctx } = this;
@@ -177,7 +182,7 @@ class UserController extends Controller {
     const { page } = ctx;
     const { pageSize, pageIndex } = page;
     const { common } = ctx.service;
-    const { username = '', is_admin = '' } = ctx.request.query;
+    const { username = '', is_admin = '', phone = '' } = ctx.request.query;
     const userInfo = await common.findOne({ modelName: 'User', where: { id: ctx.user.id } });
     if (userInfo.is_admin === 0) {
       return fail({ ctx, msg: '您不是管理员' });
@@ -185,15 +190,11 @@ class UserController extends Controller {
     const where = {
       is_admin,
       username: { $like: `%${username}%` },
+      phone: { $like: `%${phone}%` },
     };
-    const include = [{
-      model: ctx.model.Info,
-      as: 'info',
-      attributes: [ 'id', 'is_validated', 'username' ],
-    }];
     const [ total, items ] = await Promise.all([
       common.findCount({ modelName: 'User', page, where }),
-      common.findPage({ modelName: 'User', page, where, include }),
+      common.findPage({ modelName: 'User', page, where }),
     ]);
     const res = { total, pageSize, pageIndex, items };
     return success({ ctx, res });

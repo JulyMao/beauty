@@ -1,0 +1,179 @@
+2021-06-13 18:54:44,053 ERROR 17556 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: moment(...).add(...).calendar.format is not a function
+    at StoreController.register (G:\project\beauty\app\controller\store.js:24:103)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 17556
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 18:57:18,405 ERROR 17240 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: moment(...).add(...).calendar.format is not a function
+    at StoreController.register (G:\project\beauty\app\controller\store.js:24:104)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 17240
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 18:58:36,610 ERROR 16200 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:26:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 16200
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:02:22,674 ERROR 13196 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:27:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 13196
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:04:33,540 ERROR 18340 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:28:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 18340
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:09:05,119 ERROR 17484 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:209:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17484
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:09:11,363 ERROR 19760 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: app is not defined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:24:21)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 19760
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:09:42,604 ERROR 20296 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:28:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 20296
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:15:44,026 ERROR 13180 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'Store' of undefined
+    at StoreController.register (G:\project\beauty\app\controller\store.js:28:37)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 13180
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:20:54,751 ERROR 19888 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: body.phone.substring is not a function
+    at StoreController.register (G:\project\beauty\app\controller\store.js:33:110)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 19888
+hostname: DESKTOP-BH9JD8B
+
+2021-06-13 19:24:14,362 ERROR 14464 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: body.phone.substr is not a function
+    at StoreController.register (G:\project\beauty\app\controller\store.js:33:110)
+    at async G:\project\beauty\app\middleware\error_handler.js:9:7
+    at async G:\project\beauty\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (G:\project\beauty\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (G:\project\beauty\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (G:\project\beauty\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (G:\project\beauty\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (G:\project\beauty\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (G:\project\beauty\node_modules\koa-bodyparser\index.js:95:5)
+    at async G:\project\beauty\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (G:\project\beauty\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (G:\project\beauty\node_modules\egg\app\middleware\meta.js:17:5)
+
+pid: 14464
+hostname: DESKTOP-BH9JD8B
+

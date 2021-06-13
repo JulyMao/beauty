@@ -9,7 +9,10 @@ module.exports = async (ctx, next) => {
     return next();
   }
   if (!resUser || resUser.is_admin === 0) {
-    return fail({ ctx, code: 400, msg: '登录错误' });
+    return fail({ ctx, code: 400, msg: '权限不足' });
+  }
+  if (!resUser) {
+    return fail({ ctx, code: 400, msg: '权限不足' });
   }
   return next();
 };
