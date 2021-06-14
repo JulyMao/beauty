@@ -3,10 +3,10 @@
   会员卡表
     id:        主键
     store_id:   店面id
-    customer_id:  客户id
+    *customer_id:  客户id
     product_id: 产品id
     create_persion_id: 创建人id
-    card_name:  卡名称
+    name:  卡名称
     price:    卡价格
     discount:    卡折扣
     sale:   优惠价格 （暂不用）
@@ -29,19 +29,19 @@ module.exports = app => {
         type: INTEGER(11),
         allowNull: false,
       },
-      customer_id: {
-        type: INTEGER(11),
-        allowNull: false,
-      },
+      // customer_id: {
+      //   type: INTEGER(11),
+      //   allowNull: false,
+      // },
       product_id: {
-        type: INTEGER(11),
+        type: STRING(256),
         allowNull: true,
       },
       create_persion_id: {
         type: INTEGER(11),
         allowNull: true,
       },
-      card_name: {
+      name: {
         type: STRING(100),
         allowNull: false,
       },

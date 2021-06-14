@@ -6,6 +6,9 @@
 module.exports = app => {
   require('./router/store')(app);
   require('./router/user')(app);
-  require('./router/productCategory')(app);
-  require('./router/userCategory')(app);
+  require('./router/product_category')(app);
+  require('./router/user_category')(app);
+  require('./router/customer_category')(app);
+  require('./router/customer_tag')(app);
+  require('./router/vip_card')(app);
 };

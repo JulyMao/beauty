@@ -7,7 +7,7 @@ class UserCategoryController extends Controller {
     /**
      * 增加用户类别
      */
-     async addProduct(){
+     async addUserCategory(){
         const { ctx } = this;
         const { success, fail } = ctx.helper;
         const { body } = ctx.request;
