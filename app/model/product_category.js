@@ -63,7 +63,6 @@ module.exports = app => {
 
 
     ProductCategory.associate = function() {
-    // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
   };
   return ProductCategory;
 };

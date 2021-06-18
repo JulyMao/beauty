@@ -5,7 +5,7 @@
     store_id:   店面id
     customer_id:  客户id
     user_id: 员工id
-    serve_id:   服务员工id
+    serve_id:   服务id
     product_id:    产品id
     remark:备注
 

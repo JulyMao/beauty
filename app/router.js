@@ -11,4 +11,6 @@ module.exports = app => {
   require('./router/customer_category')(app);
   require('./router/customer_tag')(app);
   require('./router/vip_card')(app);
+  require('./router/coupon')(app);
+  require('./router/customer')(app);
 };

@@ -109,7 +109,11 @@ module.exports = app => {
 
 
     RecodeConsume.associate = function() {
-    // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
+    app.model.RecodeConsume.belongsTo(app.model.Customer, { foreignKey: 'id', targetKey: 'customer_id', as: 'customer' });
+    app.model.RecodeConsume.belongsTo(app.model.Product, { foreignKey: 'id', targetKey: 'vip_or_product_id', as: 'product' });
+    app.model.RecodeConsume.belongsTo(app.model.Coupon, { foreignKey: 'id', targetKey: 'coupon_id', as: 'coupon' });
+    app.model.RecodeConsume.belongsTo(app.model.VipCard, { foreignKey: 'id', targetKey: 'vip_or_product_id', as: 'vipCard' });
+    app.model.RecodeConsume.belongsTo(app.model.User, { foreignKey: 'id', targetKey: 'user_id', as: 'user' });
   };
   return RecodeConsume;
 };

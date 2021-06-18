@@ -1,9 +1,9 @@
 'use strict';
 /*
-  用户表
+  产品表
     id:        主键
     store_id:   店面id
-    product_name:  产品名称
+    name:  产品名称
     type_id: 产品类型id
     price:    产品价格
     times:    可用次数
@@ -27,7 +27,7 @@ module.exports = app => {
         type: INTEGER(11),
         allowNull: false,
       },
-      product_name: {
+      name: {
         type: STRING(100),
         allowNull: false,
       },
@@ -78,7 +78,7 @@ module.exports = app => {
 
 
     Product.associate = function() {
-    // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
+    app.model.Product.belongsTo(app.model.ProductCategory, { foreignKey: 'type_id', targetKey: 'id', as: 'productCategory' });
   };
   return Product;
 };

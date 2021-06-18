@@ -17,7 +17,6 @@
     tag:    客户标签
     remark:备注
 
-
 */
 const moment = require('moment');
 module.exports = app => {
@@ -75,23 +74,23 @@ module.exports = app => {
       },
       is_vip: {
         type: INTEGER(1),
-        allowNull: false,
+        allowNull: true,
       },
       ticket_num: {
         type: INTEGER(3),
-        allowNull: false,
+        allowNull: true,
       },
       course_card_num: {
         type: INTEGER(3),
-        allowNull: false,
+        allowNull: true,
       },
       category_id: {
         type: INTEGER(11),
-        allowNull: false,
+        allowNull: true,
       },
       tag: {
         type: STRING(200),
-        allowNull: false,
+        allowNull: true,
       },
       remake: {
         type: TEXT,
@@ -123,7 +122,7 @@ module.exports = app => {
     });
 
     Customer.associate = function() {
-    // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
+    app.model.Customer.belongsTo(app.model.CustomerCategory, { foreignKey: 'category_id', targetKey: 'id', as: 'customerCategory' });
   };
   return Customer;
 };
