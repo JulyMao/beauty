@@ -58,7 +58,7 @@ class CouponController extends Controller {
         const { name = '' } = ctx.request.query;
         const userInfo = await common.findOne({ modelName: 'User', where: { id: ctx.user.id } });
         if (userInfo.store_id !== id){
-            return fail({ ctx, code: 400, mgs: '无权查看' });
+            return fail({ ctx, code: 400, msg: '无权查看' });
         }
         const where = {
           name: { $like: `%${name}%` },
@@ -84,7 +84,7 @@ class CouponController extends Controller {
         const { common } = ctx.service;
         const { name = '',store_id = '' } = ctx.request.query;
         if (key !== 'maowei123'){
-            return fail({ ctx, code: 400, mgs: '无权查看' });
+            return fail({ ctx, code: 400, msg: '无权查看' });
         }
         const where = {
             name: { $like: `%${name}%` },

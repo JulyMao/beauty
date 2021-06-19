@@ -13,4 +13,5 @@ module.exports = app => {
   require('./router/vip_card')(app);
   require('./router/coupon')(app);
   require('./router/customer')(app);
+  require('./router/serve')(app);
 };

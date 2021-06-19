@@ -73,7 +73,9 @@ module.exports = app => {
 
 
     Serve.associate = function() {
-    // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
+    app.model.Serve.belongsTo(app.model.User, { foreignKey: 'id', targetKey: 'serve_id', as: 'serveToUser' });
+    app.model.Serve.belongsTo(app.model.Customer, { foreignKey: 'id', targetKey: 'customer_id', as: 'serveToCustomer' });
+    app.model.Serve.belongsTo(app.model.RcodeConsume, { foreignKey: 'id', targetKey: 'consume_id', as: 'serveToConsume' });
   };
   return Serve;
 };

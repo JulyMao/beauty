@@ -48,7 +48,7 @@ class StoreController extends Controller {
         const { common } = ctx.service;
         const userInfo = await common.findOne({ modelName: 'User', where: { id: ctx.user.id } });
         if (userInfo.is_admin === 0 || userInfo.store_id !== id){
-            return fail({ ctx, code: 400, mgs: '无权修改' });
+            return fail({ ctx, code: 400, msg: '无权修改' });
         }
         const attributes = _.pick(body, [ 'name', 'simple_name', 'address', 'principal', 'phone', 'remark' ]);
         const res = await common.update({ modelName: 'Store', where: { id: id }, attributes });
@@ -65,7 +65,7 @@ class StoreController extends Controller {
         const { common } = ctx.service;
         const userInfo = await common.findOne({ modelName: 'User', where: { id: ctx.user.id } });
         if (userInfo.store_id !== id){
-            return fail({ ctx, code: 400, mgs: '无权查看' });
+            return fail({ ctx, code: 400, msg: '无权查看' });
         }
         const res =  await common.findOne({ modelName: 'Store', where: { id: id } });
         return success({ ctx, res })
@@ -83,7 +83,7 @@ class StoreController extends Controller {
         const { common } = ctx.service;
         const userInfo = await common.findOne({ modelName: 'User', where: { id: ctx.user.id } });
         if (userInfo.store_id !== id){
-            return fail({ ctx, code: 400, mgs: '无权查看' });
+            return fail({ ctx, code: 400, msg: '无权查看' });
         }
         const where = { id: id };
         const [ total, items ] = await Promise.all([

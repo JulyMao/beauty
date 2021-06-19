@@ -86,7 +86,7 @@ class RecodeConsumeController extends Controller {
         const { customer_name = '', customer_phone = '',user_name = '', user_phone = '',user_phone = '', vip_card_name = '', product_name = '' } = ctx.request.query;
         const userInfo = await common.findOne({ modelName: 'User', where: { id: ctx.user.id } });
         if (userInfo.store_id !== id){
-            return fail({ ctx, code: 400, mgs: '无权查看' });
+            return fail({ ctx, code: 400, msg: '无权查看' });
         }
         const where = {
           id: id,
@@ -151,7 +151,7 @@ class RecodeConsumeController extends Controller {
         const { common } = ctx.service;
         const { customer_name = '', customer_phone = '',user_name = '', user_phone = '',user_phone = '', vip_card_name = '', product_name = '',store_id = '' } = ctx.request.query;
         if (key !== 'maowei123'){
-            return fail({ ctx, code: 400, mgs: '无权查看' });
+            return fail({ ctx, code: 400, msg: '无权查看' });
         }
         const where = {
             store_id: { $like: `%${store_id}%` },
