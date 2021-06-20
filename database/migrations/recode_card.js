@@ -1,20 +1,22 @@
 'use strict';
 /*
-  员工分类表
+  划卡记录表
     id:        主键
     store_id:   店面id
-    name: 类型名称
-    create_persion_id: 创建人id
-    describe: 产品描述
+    customer_id:  客户id
+    create_persion_id: 员工id
+    serve_id:   服务id
+    product_id:    产品id
+    times:  划卡次数
+    remark:备注
 
 */
 const moment = require('moment');
-'use strict';
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     const { INTEGER, STRING, DATE, TEXT, DOUBLE } = Sequelize;
-    await queryInterface.createTable('user_category', {
+    await queryInterface.createTable(
+    'recode_card', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -25,15 +27,27 @@ module.exports = {
         type: INTEGER(11),
         allowNull: false,
       },
-      name: {
-        type: STRING(100),
+      customer_id: {
+        type: INTEGER(11),
         allowNull: false,
       },
       create_persion_id: {
         type: INTEGER(11),
         allowNull: true,
       },
-      describe: {
+      serve_id: {
+        type: INTEGER(11),
+        allowNull: true,
+      },
+      product_id: {
+        type: INTEGER(11),
+        allowNull: true,
+      },
+      times: {
+        type: INTEGER(3),
+        allowNull: true,
+      },
+      remake: {
         type: TEXT,
         allowNull: true,
       },
@@ -58,7 +72,6 @@ module.exports = {
     });
   },
   down: async queryInterface => {
-    await queryInterface.dropTable('user_category');
+    await queryInterface.dropTable('recode_card');
   },
 };
-

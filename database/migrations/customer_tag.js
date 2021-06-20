@@ -1,20 +1,19 @@
 'use strict';
 /*
-  员工分类表
+  客户标签表
     id:        主键
     store_id:   店面id
     name: 类型名称
     create_persion_id: 创建人id
-    describe: 产品描述
+    describe: 描述
 
 */
 const moment = require('moment');
-'use strict';
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     const { INTEGER, STRING, DATE, TEXT, DOUBLE } = Sequelize;
-    await queryInterface.createTable('user_category', {
+    await queryInterface.createTable(
+    'customer_tag', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -58,7 +57,6 @@ module.exports = {
     });
   },
   down: async queryInterface => {
-    await queryInterface.dropTable('user_category');
+    await queryInterface.dropTable('customer_tag');
   },
 };
-

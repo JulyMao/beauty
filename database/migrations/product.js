@@ -1,20 +1,22 @@
 'use strict';
 /*
-  员工分类表
+  产品表
     id:        主键
     store_id:   店面id
-    name: 类型名称
-    create_persion_id: 创建人id
+    name:  产品名称
+    type_id: 产品类型id
+    price:    产品价格
+    times:    可用次数
     describe: 产品描述
+    create_persion_id:  创建人id
 
 */
 const moment = require('moment');
-'use strict';
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     const { INTEGER, STRING, DATE, TEXT, DOUBLE } = Sequelize;
-    await queryInterface.createTable('user_category', {
+    await queryInterface.createTable(
+    'Product', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -29,12 +31,24 @@ module.exports = {
         type: STRING(100),
         allowNull: false,
       },
-      create_persion_id: {
+      type_id: {
         type: INTEGER(11),
+        allowNull: true,
+      },
+      price: {
+        type: DOUBLE,
+        allowNull: true,
+      },
+      times: {
+        type: INTEGER(3),
         allowNull: true,
       },
       describe: {
         type: TEXT,
+        allowNull: true,
+      },
+      create_persion_id: {
+        type: INTEGER(11),
         allowNull: true,
       },
       updated_at: {
@@ -58,7 +72,6 @@ module.exports = {
     });
   },
   down: async queryInterface => {
-    await queryInterface.dropTable('user_category');
+    await queryInterface.dropTable('product');
   },
 };
-

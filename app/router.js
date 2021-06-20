@@ -14,4 +14,6 @@ module.exports = app => {
   require('./router/coupon')(app);
   require('./router/customer')(app);
   require('./router/serve')(app);
+  require('./router/remain_product')(app);
+  require('./router/recode_card')(app);
 };

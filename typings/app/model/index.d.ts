@@ -10,7 +10,7 @@ import ExportProduct = require('../../../app/model/product');
 import ExportProductCategory = require('../../../app/model/product_category');
 import ExportRecodeCard = require('../../../app/model/recode_card');
 import ExportRecodeConsume = require('../../../app/model/recode_consume');
-import ExportRemainPeoduct = require('../../../app/model/remain_peoduct');
+import ExportRemainProduct = require('../../../app/model/remain_product');
 import ExportServe = require('../../../app/model/serve');
 import ExportStore = require('../../../app/model/store');
 import ExportUser = require('../../../app/model/user');
@@ -27,7 +27,7 @@ declare module 'egg' {
     ProductCategory: ReturnType<typeof ExportProductCategory>;
     RecodeCard: ReturnType<typeof ExportRecodeCard>;
     RecodeConsume: ReturnType<typeof ExportRecodeConsume>;
-    RemainPeoduct: ReturnType<typeof ExportRemainPeoduct>;
+    RemainProduct: ReturnType<typeof ExportRemainProduct>;
     Serve: ReturnType<typeof ExportServe>;
     Store: ReturnType<typeof ExportStore>;
     User: ReturnType<typeof ExportUser>;

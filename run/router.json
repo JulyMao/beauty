@@ -5,6 +5,954 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/api/coupon/create",
+    "regexp": "/^\\/api\\/coupon\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/coupon/update/:id",
+    "regexp": "/^\\/api\\/coupon\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/coupon/:id",
+    "regexp": "/^\\/api\\/coupon\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/coupon/list/:id",
+    "regexp": "/^\\/api\\/coupon\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/coupon/del",
+    "regexp": "/^\\/api\\/coupon\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer/create",
+    "regexp": "/^\\/api\\/customer\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer/update/:id",
+    "regexp": "/^\\/api\\/customer\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer/:id",
+    "regexp": "/^\\/api\\/customer\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer/list/:id",
+    "regexp": "/^\\/api\\/customer\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer/del",
+    "regexp": "/^\\/api\\/customer\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer-category/create",
+    "regexp": "/^\\/api\\/customer-category\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-category/update/:id",
+    "regexp": "/^\\/api\\/customer-category\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-category/:id",
+    "regexp": "/^\\/api\\/customer-category\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-category/list/:id",
+    "regexp": "/^\\/api\\/customer-category\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer-category/del",
+    "regexp": "/^\\/api\\/customer-category\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer-tag/create",
+    "regexp": "/^\\/api\\/customer-tag\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-tag/update/:id",
+    "regexp": "/^\\/api\\/customer-tag\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-tag/:id",
+    "regexp": "/^\\/api\\/customer-tag\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-tag/list/:id",
+    "regexp": "/^\\/api\\/customer-tag\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer-tag/del",
+    "regexp": "/^\\/api\\/customer-tag\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/product/create",
+    "regexp": "/^\\/api\\/product\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/product/update/:id",
+    "regexp": "/^\\/api\\/product\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/product/:id",
+    "regexp": "/^\\/api\\/product\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/product/list/:id",
+    "regexp": "/^\\/api\\/product\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/product/del",
+    "regexp": "/^\\/api\\/product\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/product-category/create",
+    "regexp": "/^\\/api\\/product-category\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/product-category/update/:id",
+    "regexp": "/^\\/api\\/product-category\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/product-category/:id",
+    "regexp": "/^\\/api\\/product-category\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/product-category/list/:id",
+    "regexp": "/^\\/api\\/product-category\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/product-category/del",
+    "regexp": "/^\\/api\\/product-category\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/recode-card/create",
+    "regexp": "/^\\/api\\/recode-card\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/recode-consume/:id",
+    "regexp": "/^\\/api\\/recode-consume\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/recode-card/list/:id",
+    "regexp": "/^\\/api\\/recode-card\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/recode-consume/create",
+    "regexp": "/^\\/api\\/recode-consume\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/recode-consume/:id",
+    "regexp": "/^\\/api\\/recode-consume\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/recode-consume/list/:id",
+    "regexp": "/^\\/api\\/recode-consume\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/remain-product/buy",
+    "regexp": "/^\\/api\\/remain-product\\/buy(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/remain-product/:id",
+    "regexp": "/^\\/api\\/remain-product\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/remain-product/list/:id",
+    "regexp": "/^\\/api\\/remain-product\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/serve/create",
+    "regexp": "/^\\/api\\/serve\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/serve/update/:id",
+    "regexp": "/^\\/api\\/serve\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/serve/:id",
+    "regexp": "/^\\/api\\/serve\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/serve/list/:id",
+    "regexp": "/^\\/api\\/serve\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/serve/store-list/:id",
+    "regexp": "/^\\/api\\/serve\\/store-list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/serve/del",
+    "regexp": "/^\\/api\\/serve\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/api/store/register",
     "regexp": "/^\\/api\\/store\\/register(?:\\/(?=$))?$/",
     "stack": [
@@ -31,6 +979,7 @@
     "path": "/api/store/update/:id",
     "regexp": "/^\\/api\\/store\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "wrappedController"
     ]
@@ -95,7 +1044,6 @@
     "path": "/api/user/login",
     "regexp": "/^\\/api\\/user\\/login(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "wrappedController"
     ]
@@ -122,6 +1070,7 @@
     "path": "/api/user/add",
     "regexp": "/^\\/api\\/user\\/add(?:\\/(?=$))?$/",
     "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "wrappedController"
     ]
@@ -135,6 +1084,7 @@
     "path": "/api/user/del",
     "regexp": "/^\\/api\\/user\\/del(?:\\/(?=$))?$/",
     "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "wrappedController"
     ]
@@ -221,6 +1171,7 @@
     "path": "/api/user/list",
     "regexp": "/^\\/api\\/user\\/list(?:\\/(?=$))?$/",
     "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "G:\\project\\beauty\\app\\middleware\\pagination.js",
       "wrappedController"
@@ -257,6 +1208,253 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/api/user-category/create",
+    "regexp": "/^\\/api\\/user-category\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/user-category/update/:id",
+    "regexp": "/^\\/api\\/user-category\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/user-category/:id",
+    "regexp": "/^\\/api\\/user-category\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/user-category/list/:id",
+    "regexp": "/^\\/api\\/user-category\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/user-category/del",
+    "regexp": "/^\\/api\\/user-category\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/vip-card/create",
+    "regexp": "/^\\/api\\/vip-card\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/vip-card/addProduct/:id",
+    "regexp": "/^\\/api\\/vip-card\\/addProduct\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/vip-card/update/:id",
+    "regexp": "/^\\/api\\/vip-card\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/vip-card/:id",
+    "regexp": "/^\\/api\\/vip-card\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/vip-card/list/:id",
+    "regexp": "/^\\/api\\/vip-card\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/vip-card/del",
+    "regexp": "/^\\/api\\/vip-card\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/vip-card/del",
+    "regexp": "/^\\/api\\/vip-card\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/api/store/register",
     "regexp": "/^\\/api\\/store\\/register(?:\\/(?=$))?$/",
     "stack": [
@@ -283,6 +1481,7 @@
     "path": "/api/store/update/:id",
     "regexp": "/^\\/api\\/store\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "wrappedController"
     ]
@@ -347,7 +1546,6 @@
     "path": "/api/user/login",
     "regexp": "/^\\/api\\/user\\/login(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "wrappedController"
     ]
@@ -374,6 +1572,7 @@
     "path": "/api/user/add",
     "regexp": "/^\\/api\\/user\\/add(?:\\/(?=$))?$/",
     "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "wrappedController"
     ]
@@ -387,6 +1586,7 @@
     "path": "/api/user/del",
     "regexp": "/^\\/api\\/user\\/del(?:\\/(?=$))?$/",
     "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "wrappedController"
     ]
@@ -473,6 +1673,7 @@
     "path": "/api/user/list",
     "regexp": "/^\\/api\\/user\\/list(?:\\/(?=$))?$/",
     "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
       "passportAuthenticate",
       "G:\\project\\beauty\\app\\middleware\\pagination.js",
       "wrappedController"
@@ -500,6 +1701,1032 @@
     "regexp": "/^\\/api\\/user\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/product-category/create",
+    "regexp": "/^\\/api\\/product-category\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/product-category/update/:id",
+    "regexp": "/^\\/api\\/product-category\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/product-category/:id",
+    "regexp": "/^\\/api\\/product-category\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/product-category/list/:id",
+    "regexp": "/^\\/api\\/product-category\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/product-category/del",
+    "regexp": "/^\\/api\\/product-category\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/user-category/create",
+    "regexp": "/^\\/api\\/user-category\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/user-category/update/:id",
+    "regexp": "/^\\/api\\/user-category\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/user-category/:id",
+    "regexp": "/^\\/api\\/user-category\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/user-category/list/:id",
+    "regexp": "/^\\/api\\/user-category\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/user-category/del",
+    "regexp": "/^\\/api\\/user-category\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer-category/create",
+    "regexp": "/^\\/api\\/customer-category\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-category/update/:id",
+    "regexp": "/^\\/api\\/customer-category\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-category/:id",
+    "regexp": "/^\\/api\\/customer-category\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-category/list/:id",
+    "regexp": "/^\\/api\\/customer-category\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer-category/del",
+    "regexp": "/^\\/api\\/customer-category\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer-tag/create",
+    "regexp": "/^\\/api\\/customer-tag\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-tag/update/:id",
+    "regexp": "/^\\/api\\/customer-tag\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-tag/:id",
+    "regexp": "/^\\/api\\/customer-tag\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer-tag/list/:id",
+    "regexp": "/^\\/api\\/customer-tag\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer-tag/del",
+    "regexp": "/^\\/api\\/customer-tag\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/vip-card/create",
+    "regexp": "/^\\/api\\/vip-card\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/vip-card/addProduct/:id",
+    "regexp": "/^\\/api\\/vip-card\\/addProduct\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/vip-card/update/:id",
+    "regexp": "/^\\/api\\/vip-card\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/vip-card/:id",
+    "regexp": "/^\\/api\\/vip-card\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/vip-card/list/:id",
+    "regexp": "/^\\/api\\/vip-card\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/vip-card/del",
+    "regexp": "/^\\/api\\/vip-card\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/vip-card/del",
+    "regexp": "/^\\/api\\/vip-card\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/coupon/create",
+    "regexp": "/^\\/api\\/coupon\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/coupon/update/:id",
+    "regexp": "/^\\/api\\/coupon\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/coupon/:id",
+    "regexp": "/^\\/api\\/coupon\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/coupon/list/:id",
+    "regexp": "/^\\/api\\/coupon\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/coupon/del",
+    "regexp": "/^\\/api\\/coupon\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer/create",
+    "regexp": "/^\\/api\\/customer\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer/update/:id",
+    "regexp": "/^\\/api\\/customer\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer/:id",
+    "regexp": "/^\\/api\\/customer\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/customer/list/:id",
+    "regexp": "/^\\/api\\/customer\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/customer/del",
+    "regexp": "/^\\/api\\/customer\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/serve/create",
+    "regexp": "/^\\/api\\/serve\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PATCH"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/serve/update/:id",
+    "regexp": "/^\\/api\\/serve\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/serve/:id",
+    "regexp": "/^\\/api\\/serve\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/serve/list/:id",
+    "regexp": "/^\\/api\\/serve\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/serve/store-list/:id",
+    "regexp": "/^\\/api\\/serve\\/store-list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/serve/del",
+    "regexp": "/^\\/api\\/serve\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/remain-product/buy",
+    "regexp": "/^\\/api\\/remain-product\\/buy(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/remain-product/:id",
+    "regexp": "/^\\/api\\/remain-product\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/remain-product/list/:id",
+    "regexp": "/^\\/api\\/remain-product\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/recode-card/create",
+    "regexp": "/^\\/api\\/recode-card\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\project\\beauty\\app\\middleware\\admin_user.js",
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/recode-consume/:id",
+    "regexp": "/^\\/api\\/recode-consume\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/recode-card/list/:id",
+    "regexp": "/^\\/api\\/recode-card\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "passportAuthenticate",
+      "G:\\project\\beauty\\app\\middleware\\pagination.js",
       "wrappedController"
     ]
   }

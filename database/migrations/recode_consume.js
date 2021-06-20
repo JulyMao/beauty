@@ -19,10 +19,10 @@
 
 */
 const moment = require('moment');
-module.exports = app => {
-  const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
-
-  const RecodeConsume = app.model.define(
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    const { INTEGER, STRING, DATE, TEXT, DOUBLE } = Sequelize;
+    await queryInterface.createTable(
     'RecodeConsume', {
       id: {
         type: INTEGER(11),
@@ -100,20 +100,9 @@ module.exports = app => {
           return this.getDataValue('deleted_at') && moment(this.getDataValue('deleted_at')).format('YYYY-MM-DD HH:mm:ss');
         },
       },
-    }, {
-      timestamps: true,
-      paranoid: true,
-      freezeTableName: true,
-      tableName: 'recode_consume',
     });
-
-
-    RecodeConsume.associate = function() {
-    app.model.RecodeConsume.belongsTo(app.model.Customer, { targetKey: 'id', foreignKey: 'customer_id', as: 'customer' });
-    app.model.RecodeConsume.belongsTo(app.model.Product, { targetKey: 'id', foreignKey: 'vip_or_product_id', as: 'product' });
-    app.model.RecodeConsume.belongsTo(app.model.Coupon, { targetKey: 'id', foreignKey: 'coupon_id', as: 'coupon' });
-    app.model.RecodeConsume.belongsTo(app.model.VipCard, { targetKey: 'id', foreignKey: 'vip_or_product_id', as: 'vipCard' });
-    app.model.RecodeConsume.belongsTo(app.model.User, { targetKey: 'id', foreignKey: 'user_id', as: 'user' });
-  };
-  return RecodeConsume;
+  },
+  down: async queryInterface => {
+    await queryInterface.dropTable('recode_consume');
+  },
 };

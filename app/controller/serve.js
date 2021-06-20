@@ -104,13 +104,13 @@ class ServeController extends Controller {
                 model: ctx.model.Customer,
                 as: 'serveToCustomer',
                 attributes: ['id','name'],
-                where = { name: { $like: `%${customerName}%` }, phone: { $like: `%${customerPhone}%` } },
+                where: { name: { $like: `%${customerName}%` }, phone: { $like: `%${customerPhone}%` } },
             },
             {
                 model: ctx.model.User,
                 as: 'serveToUser',
                 attributes: ['id','name'],
-                where = { name: { $like: `%${userName}%` }, phone: { $like: `%${userPhone}%` } },
+                where: { name: { $like: `%${userName}%` }, phone: { $like: `%${userPhone}%` } },
             },
             {
                 model: ctx.model.RcodeConsume,
@@ -153,13 +153,13 @@ class ServeController extends Controller {
                 model: ctx.model.Customer,
                 as: 'serveToCustomer',
                 attributes: ['id','name'],
-                where = { name: { $like: `%${customerName}%` }, phone: { $like: `%${customerPhone}%` } },
+                where: { name: { $like: `%${customerName}%` }, phone: { $like: `%${customerPhone}%` } },
             },
             {
                 model: ctx.model.User,
                 as: 'serveToUser',
                 attributes: ['id','name'],
-                where = { name: { $like: `%${userName}%` }, phone: { $like: `%${userPhone}%` } },
+                where: { name: { $like: `%${userName}%` }, phone: { $like: `%${userPhone}%` } },
             },
             {
                 model: ctx.model.RcodeConsume,

@@ -21,9 +21,9 @@ class VipCardController extends Controller {
           return fail({ ctx, code: 400, msg: '会员卡已存在' });
         }
         const productArr = body.product_id.split(',')
-        productArr.array.forEach(product_id => {
-            let where = { store_id: userInfo.store_id, product_id: product_id, name: body.name, price: body.price, discount: body.discount, create_persion_id: ctx.user.id, describe: body.describe };
-            await ctx.model.VipCard.create( where );
+        productArr.array.forEach(productId => {
+            let where = { store_id: userInfo.store_id, product_id: productId, name: body.name, price: body.price, discount: body.discount, create_persion_id: ctx.user.id, describe: body.describe };
+            ctx.model.VipCard.create( where );
         });
         return success({ ctx, msg: '添加成功' });
     }

@@ -19,10 +19,10 @@
 
 */
 const moment = require('moment');
-module.exports = app => {
-  const { INTEGER, STRING, DATE, TEXT, DOUBLE } = app.Sequelize;
-
-  const Customer = app.model.define(
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    const { INTEGER, STRING, DATE, TEXT, DOUBLE } = Sequelize;
+    await queryInterface.createTable(
     'Customer', {
       id: {
         type: INTEGER(11),
@@ -114,16 +114,9 @@ module.exports = app => {
           return this.getDataValue('deleted_at') && moment(this.getDataValue('deleted_at')).format('YYYY-MM-DD HH:mm:ss');
         },
       },
-    }, {
-      timestamps: true,
-      paranoid: true,
-      freezeTableName: true,
-      tableName: 'customer',
     });
-
-    Customer.associate = function() {
-    app.model.Customer.belongsTo(app.model.CustomerCategory, { foreignKey: 'category_id', targetKey: 'id', as: 'customerCategory' });
-    app.model.Customer.hasMany(app.model.RemainProduct, { foreignKey: 'id', targetKey: 'customer_id', as: 'customerToRemain' });
-  };
-  return Customer;
+  },
+  down: async queryInterface => {
+    await queryInterface.dropTable('customer');
+  },
 };

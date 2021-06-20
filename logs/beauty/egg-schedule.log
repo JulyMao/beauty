@@ -100,3 +100,60 @@
 2021-06-13 19:42:08,371 INFO 17244 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
 2021-06-13 19:42:08,371 INFO 17244 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
 2021-06-13 19:42:08,371 INFO 17244 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:25:26,264 INFO 21472 [Timer] G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 47073738ms at 2021-06-21 04:30:00.002
+2021-06-20 15:25:26,264 INFO 21472 [Timer] G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 30873736ms at 2021-06-21 00:00:00.000
+2021-06-20 15:25:26,264 INFO 21472 [Timer] G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 30874736ms at 2021-06-21 00:00:01.000
+2021-06-20 15:25:25,670 INFO 15280 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:25:25,670 INFO 15280 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:25:25,670 INFO 15280 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:26:13,083 INFO 3016 [Timer] G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 47026918ms at 2021-06-21 04:30:00.001
+2021-06-20 15:26:13,084 INFO 3016 [Timer] G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 30826917ms at 2021-06-21 00:00:00.001
+2021-06-20 15:26:13,084 INFO 3016 [Timer] G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 30827916ms at 2021-06-21 00:00:01.000
+2021-06-20 15:26:12,677 INFO 3980 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:26:12,677 INFO 3980 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:26:12,677 INFO 3980 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:26:22,574 INFO 7056 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:26:22,574 INFO 7056 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:26:22,574 INFO 7056 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:26:31,811 INFO 2196 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:26:31,811 INFO 2196 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:26:31,811 INFO 2196 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:26:39,917 INFO 3448 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:26:39,917 INFO 3448 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:26:39,917 INFO 3448 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:26:48,133 INFO 8448 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:26:48,133 INFO 8448 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:26:48,133 INFO 8448 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:27:21,859 INFO 17412 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:27:21,859 INFO 17412 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:27:21,859 INFO 17412 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:27:30,645 INFO 15400 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:27:30,645 INFO 15400 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:27:30,645 INFO 15400 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:28:02,706 INFO 21108 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:28:02,706 INFO 21108 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:28:02,706 INFO 21108 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:28:13,804 INFO 1964 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:28:13,804 INFO 1964 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:28:13,804 INFO 1964 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:28:16,115 INFO 17528 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:28:16,115 INFO 17528 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:28:16,115 INFO 17528 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:56:49,749 INFO 1708 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:56:49,749 INFO 1708 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:56:49,749 INFO 1708 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 15:56:51,429 INFO 15924 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 15:56:51,429 INFO 15924 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 15:56:51,429 INFO 15924 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 16:11:18,658 INFO 23148 [Timer] G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44321344ms at 2021-06-21 04:30:00.001
+2021-06-20 16:11:18,658 INFO 23148 [Timer] G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 28121342ms at 2021-06-21 00:00:00.000
+2021-06-20 16:11:18,658 INFO 23148 [Timer] G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28122342ms at 2021-06-21 00:00:01.000
+2021-06-20 16:11:18,183 INFO 21540 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 16:11:18,184 INFO 21540 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 16:11:18,184 INFO 21540 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 16:11:19,457 INFO 14260 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 16:11:19,457 INFO 14260 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 16:11:19,457 INFO 14260 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-20 16:11:20,931 INFO 14108 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-20 16:11:20,931 INFO 14108 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-20 16:11:20,931 INFO 14108 [egg-schedule]: register schedule G:\project\beauty\node_modules\egg-logrotator\app\schedule\rotate_by_file.js

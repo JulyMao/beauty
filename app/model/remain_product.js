@@ -63,7 +63,8 @@ module.exports = app => {
 
 
     RemainProduct.associate = function() {
-    // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
+      app.model.RemainProduct.belongsTo(app.model.Customer, { targetKey: 'id', foreignKey: 'customer_id', as: 'remainProductToCustomer' });
+      app.model.RemainProduct.belongsTo(app.model.Product, { targetKey: 'id', foreignKey: 'product_id', as: 'remainProductToProduct' });
   };
   return RemainProduct;
 };

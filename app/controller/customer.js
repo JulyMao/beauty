@@ -43,12 +43,14 @@ class CustomerController extends Controller {
                 model: ctx.model.CustomerCategory,
                 as: 'customerCategory',
                 attributes: ['id','name'],
-            }
+            },
         ];
-        const res = await common.findOne({ modelName: 'Customer', where: { id: id, deleted_at: null  } }, include)
-        if (!userInfo || userInfo.store_id !== res.store_id) {
+        const product_num = await common.findCount({ modelName: 'RemainProduct', where: { customer_id: id, remain_num: { $gt: 0 } } });
+        const customerInfo = await common.findOne({ modelName: 'Customer', where: { store_id: userInfo.store_id, id: id, deleted_at: null  } }, include)
+        if (!userInfo || userInfo.store_id !== customerInfo.store_id) {
             return fail({ ctx, code: 401, msg: '无权查看客户' });
         }
+        const res = { customerInfo, product_num }
         return success({ ctx, res });
     }
 

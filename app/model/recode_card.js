@@ -4,9 +4,10 @@
     id:        主键
     store_id:   店面id
     customer_id:  客户id
-    user_id: 员工id
+    create_persion_id: 员工id
     serve_id:   服务id
     product_id:    产品id
+    times:  划卡次数
     remark:备注
 
 */
@@ -30,7 +31,7 @@ module.exports = app => {
         type: INTEGER(11),
         allowNull: false,
       },
-      user_id: {
+      create_persion_id: {
         type: INTEGER(11),
         allowNull: true,
       },
@@ -40,6 +41,10 @@ module.exports = app => {
       },
       product_id: {
         type: INTEGER(11),
+        allowNull: true,
+      },
+      times: {
+        type: INTEGER(3),
         allowNull: true,
       },
       remake: {
@@ -73,7 +78,10 @@ module.exports = app => {
 
 
     RecodeCard.associate = function() {
-    // app.model.User.belongsTo(app.model.Info, { foreignKey: 'id', targetKey: 'user_id', as: 'info' });
+      app.model.RecodeCard.belongsTo(app.model.Customer, { targetKey: 'id', foreignKey: 'customer_id', as: 'recodeCardToCustomer' });
+      app.model.RecodeCard.belongsTo(app.model.Product, { targetKey: 'id', foreignKey: 'product_id', as: 'recodeCardToProduct' });
+      app.model.RecodeCard.belongsTo(app.model.User, { targetKey: 'id', foreignKey: 'serve_id', as: 'recodeCardToCreateUser' });
+      app.model.RecodeCard.belongsTo(app.model.User, { targetKey: 'id', foreignKey: 'create_persion_id', as: 'recodeCardToServeUser' });
   };
   return RecodeCard;
 };

@@ -1,20 +1,24 @@
 'use strict';
 /*
-  员工分类表
+  会员卡表
     id:        主键
     store_id:   店面id
-    name: 类型名称
+    *customer_id:  客户id
+    product_id: 产品id
     create_persion_id: 创建人id
+    name:  卡名称
+    price:    卡价格
+    discount:    卡折扣
+    sale:   优惠价格 （暂不用）
     describe: 产品描述
 
 */
 const moment = require('moment');
-'use strict';
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     const { INTEGER, STRING, DATE, TEXT, DOUBLE } = Sequelize;
-    await queryInterface.createTable('user_category', {
+    await queryInterface.createTable(
+    'vip_card', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -25,12 +29,28 @@ module.exports = {
         type: INTEGER(11),
         allowNull: false,
       },
+      // customer_id: {
+      //   type: INTEGER(11),
+      //   allowNull: false,
+      // },
+      product_id: {
+        type: STRING(256),
+        allowNull: true,
+      },
+      create_persion_id: {
+        type: INTEGER(11),
+        allowNull: true,
+      },
       name: {
         type: STRING(100),
         allowNull: false,
       },
-      create_persion_id: {
-        type: INTEGER(11),
+      price: {
+        type: DOUBLE,
+        allowNull: true,
+      },
+      discount: {
+        type: DOUBLE,
         allowNull: true,
       },
       describe: {
@@ -58,7 +78,6 @@ module.exports = {
     });
   },
   down: async queryInterface => {
-    await queryInterface.dropTable('user_category');
+    await queryInterface.dropTable('vip_card');
   },
 };
-

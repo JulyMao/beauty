@@ -1,20 +1,22 @@
 'use strict';
 /*
-  员工分类表
+  优惠券表
     id:        主键
     store_id:   店面id
-    name: 类型名称
-    create_persion_id: 创建人id
+    name:  优惠券名称
+    price:    产品价格
+    times:    可用次数
+    start_dt:   开始时间
+    end_dt: 结束时间
     describe: 产品描述
+    create_persion_id:  创建人id
 
 */
 const moment = require('moment');
-'use strict';
-
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
-    const { INTEGER, STRING, DATE, TEXT, DOUBLE } = Sequelize;
-    await queryInterface.createTable('user_category', {
+up: async (queryInterface, Sequelize) => {
+  const { INTEGER, STRING, DATE, TEXT, DOUBLE } = Sequelize;
+  await queryInterface.createTable( 'Coupon', {
       id: {
         type: INTEGER(11),
         primaryKey: true,
@@ -29,12 +31,32 @@ module.exports = {
         type: STRING(100),
         allowNull: false,
       },
-      create_persion_id: {
-        type: INTEGER(11),
+      price: {
+        type: DOUBLE,
         allowNull: true,
+      },
+      times: {
+        type: INTEGER(3),
+        allowNull: true,
+      },
+      start_dt: {
+        type: DATE,
+        get() {
+          return this.getDataValue('start_dt') && moment(this.getDataValue('start_dt')).format('YYYY-MM-DD');
+        },
+      },
+      end_dt: {
+        type: DATE,
+        get() {
+          return this.getDataValue('end_dt') && moment(this.getDataValue('end_dt')).format('YYYY-MM-DD');
+        },
       },
       describe: {
         type: TEXT,
+        allowNull: true,
+      },
+      create_persion_id: {
+        type: INTEGER(11),
         allowNull: true,
       },
       updated_at: {
@@ -58,7 +80,6 @@ module.exports = {
     });
   },
   down: async queryInterface => {
-    await queryInterface.dropTable('user_category');
+    await queryInterface.dropTable('coupon');
   },
 };
-

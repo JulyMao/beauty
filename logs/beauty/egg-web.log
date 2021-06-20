@@ -415,3 +415,211 @@
 2021-06-13 19:42:08,724 INFO 17244 [egg:core] dump config after load, 4ms
 2021-06-13 19:42:08,748 INFO 17244 [egg-watcher:application] watcher start success
 2021-06-13 19:42:08,769 INFO 17244 [egg:core] dump config after ready, 4ms
+2021-06-20 15:25:25,647 INFO 15280 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:25:25,670 INFO 15280 [egg-multipart] stream mode enable
+2021-06-20 15:25:26,152 INFO 15280 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:25:26,155 INFO 15280 [egg-security] use methodnoallow middleware
+2021-06-20 15:25:26,156 INFO 15280 [egg-security] use noopen middleware
+2021-06-20 15:25:26,157 INFO 15280 [egg-security] use nosniff middleware
+2021-06-20 15:25:26,157 INFO 15280 [egg-security] use xssProtection middleware
+2021-06-20 15:25:26,158 INFO 15280 [egg-security] use xframe middleware
+2021-06-20 15:25:26,159 INFO 15280 [egg-security] use dta middleware
+2021-06-20 15:25:26,159 INFO 15280 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:25:26,190 INFO 15280 [egg:core] dump config after load, 7ms
+2021-06-20 15:25:26,206 INFO 15280 [egg-watcher:application] watcher start success
+2021-06-20 15:25:26,260 INFO 15280 [egg:core] dump config after ready, 5ms
+2021-06-20 15:26:12,653 INFO 3980 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:26:12,678 INFO 3980 [egg-multipart] stream mode enable
+2021-06-20 15:26:12,997 INFO 3980 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:26:12,999 INFO 3980 [egg-security] use methodnoallow middleware
+2021-06-20 15:26:13,000 INFO 3980 [egg-security] use noopen middleware
+2021-06-20 15:26:13,000 INFO 3980 [egg-security] use nosniff middleware
+2021-06-20 15:26:13,001 INFO 3980 [egg-security] use xssProtection middleware
+2021-06-20 15:26:13,001 INFO 3980 [egg-security] use xframe middleware
+2021-06-20 15:26:13,002 INFO 3980 [egg-security] use dta middleware
+2021-06-20 15:26:13,002 INFO 3980 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:26:13,030 INFO 3980 [egg:core] dump config after load, 5ms
+2021-06-20 15:26:13,057 INFO 3980 [egg-watcher:application] watcher start success
+2021-06-20 15:26:13,079 INFO 3980 [egg:core] dump config after ready, 6ms
+2021-06-20 15:26:22,550 INFO 7056 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:26:22,575 INFO 7056 [egg-multipart] stream mode enable
+2021-06-20 15:26:22,896 INFO 7056 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:26:22,897 INFO 7056 [egg-security] use methodnoallow middleware
+2021-06-20 15:26:22,898 INFO 7056 [egg-security] use noopen middleware
+2021-06-20 15:26:22,898 INFO 7056 [egg-security] use nosniff middleware
+2021-06-20 15:26:22,899 INFO 7056 [egg-security] use xssProtection middleware
+2021-06-20 15:26:22,899 INFO 7056 [egg-security] use xframe middleware
+2021-06-20 15:26:22,900 INFO 7056 [egg-security] use dta middleware
+2021-06-20 15:26:22,900 INFO 7056 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:26:22,930 INFO 7056 [egg:core] dump config after load, 4ms
+2021-06-20 15:26:22,955 INFO 7056 [egg-watcher:application] watcher start success
+2021-06-20 15:26:22,984 INFO 7056 [egg:core] dump config after ready, 12ms
+2021-06-20 15:26:31,789 INFO 2196 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:26:31,812 INFO 2196 [egg-multipart] stream mode enable
+2021-06-20 15:26:32,246 INFO 2196 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:26:32,248 INFO 2196 [egg-security] use methodnoallow middleware
+2021-06-20 15:26:32,248 INFO 2196 [egg-security] use noopen middleware
+2021-06-20 15:26:32,249 INFO 2196 [egg-security] use nosniff middleware
+2021-06-20 15:26:32,249 INFO 2196 [egg-security] use xssProtection middleware
+2021-06-20 15:26:32,250 INFO 2196 [egg-security] use xframe middleware
+2021-06-20 15:26:32,251 INFO 2196 [egg-security] use dta middleware
+2021-06-20 15:26:32,251 INFO 2196 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:26:32,281 INFO 2196 [egg:core] dump config after load, 4ms
+2021-06-20 15:26:32,310 INFO 2196 [egg-watcher:application] watcher start success
+2021-06-20 15:26:32,332 INFO 2196 [egg:core] dump config after ready, 5ms
+2021-06-20 15:26:39,865 INFO 3448 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:26:39,918 INFO 3448 [egg-multipart] stream mode enable
+2021-06-20 15:26:40,272 INFO 3448 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:26:40,274 INFO 3448 [egg-security] use methodnoallow middleware
+2021-06-20 15:26:40,275 INFO 3448 [egg-security] use noopen middleware
+2021-06-20 15:26:40,275 INFO 3448 [egg-security] use nosniff middleware
+2021-06-20 15:26:40,276 INFO 3448 [egg-security] use xssProtection middleware
+2021-06-20 15:26:40,276 INFO 3448 [egg-security] use xframe middleware
+2021-06-20 15:26:40,277 INFO 3448 [egg-security] use dta middleware
+2021-06-20 15:26:40,277 INFO 3448 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:26:40,304 INFO 3448 [egg:core] dump config after load, 4ms
+2021-06-20 15:26:40,355 INFO 3448 [egg-watcher:application] watcher start success
+2021-06-20 15:26:40,386 INFO 3448 [egg:core] dump config after ready, 6ms
+2021-06-20 15:26:48,111 INFO 8448 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:26:48,134 INFO 8448 [egg-multipart] stream mode enable
+2021-06-20 15:26:48,494 INFO 8448 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:26:48,496 INFO 8448 [egg-security] use methodnoallow middleware
+2021-06-20 15:26:48,496 INFO 8448 [egg-security] use noopen middleware
+2021-06-20 15:26:48,497 INFO 8448 [egg-security] use nosniff middleware
+2021-06-20 15:26:48,497 INFO 8448 [egg-security] use xssProtection middleware
+2021-06-20 15:26:48,498 INFO 8448 [egg-security] use xframe middleware
+2021-06-20 15:26:48,498 INFO 8448 [egg-security] use dta middleware
+2021-06-20 15:26:48,498 INFO 8448 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:26:48,529 INFO 8448 [egg:core] dump config after load, 8ms
+2021-06-20 15:26:48,554 INFO 8448 [egg-watcher:application] watcher start success
+2021-06-20 15:26:48,577 INFO 8448 [egg:core] dump config after ready, 6ms
+2021-06-20 15:27:21,830 INFO 17412 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:27:21,860 INFO 17412 [egg-multipart] stream mode enable
+2021-06-20 15:27:22,193 INFO 17412 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:27:22,198 INFO 17412 [egg-security] use methodnoallow middleware
+2021-06-20 15:27:22,200 INFO 17412 [egg-security] use noopen middleware
+2021-06-20 15:27:22,202 INFO 17412 [egg-security] use nosniff middleware
+2021-06-20 15:27:22,203 INFO 17412 [egg-security] use xssProtection middleware
+2021-06-20 15:27:22,204 INFO 17412 [egg-security] use xframe middleware
+2021-06-20 15:27:22,206 INFO 17412 [egg-security] use dta middleware
+2021-06-20 15:27:22,206 INFO 17412 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:27:22,298 INFO 17412 [egg:core] dump config after load, 9ms
+2021-06-20 15:27:22,334 INFO 17412 [egg-watcher:application] watcher start success
+2021-06-20 15:27:22,357 INFO 17412 [egg:core] dump config after ready, 6ms
+2021-06-20 15:27:30,623 INFO 15400 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:27:30,646 INFO 15400 [egg-multipart] stream mode enable
+2021-06-20 15:27:31,019 INFO 15400 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:27:31,021 INFO 15400 [egg-security] use methodnoallow middleware
+2021-06-20 15:27:31,021 INFO 15400 [egg-security] use noopen middleware
+2021-06-20 15:27:31,022 INFO 15400 [egg-security] use nosniff middleware
+2021-06-20 15:27:31,022 INFO 15400 [egg-security] use xssProtection middleware
+2021-06-20 15:27:31,023 INFO 15400 [egg-security] use xframe middleware
+2021-06-20 15:27:31,023 INFO 15400 [egg-security] use dta middleware
+2021-06-20 15:27:31,023 INFO 15400 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:27:31,054 INFO 15400 [egg:core] dump config after load, 6ms
+2021-06-20 15:27:31,084 INFO 15400 [egg-watcher:application] watcher start success
+2021-06-20 15:27:31,109 INFO 15400 [egg:core] dump config after ready, 6ms
+2021-06-20 15:28:02,661 INFO 21108 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:28:02,707 INFO 21108 [egg-multipart] stream mode enable
+2021-06-20 15:28:03,088 INFO 21108 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:28:03,089 INFO 21108 [egg-security] use methodnoallow middleware
+2021-06-20 15:28:03,090 INFO 21108 [egg-security] use noopen middleware
+2021-06-20 15:28:03,090 INFO 21108 [egg-security] use nosniff middleware
+2021-06-20 15:28:03,091 INFO 21108 [egg-security] use xssProtection middleware
+2021-06-20 15:28:03,091 INFO 21108 [egg-security] use xframe middleware
+2021-06-20 15:28:03,092 INFO 21108 [egg-security] use dta middleware
+2021-06-20 15:28:03,092 INFO 21108 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:28:03,118 INFO 21108 [egg:core] dump config after load, 4ms
+2021-06-20 15:28:03,143 INFO 21108 [egg-watcher:application] watcher start success
+2021-06-20 15:28:03,165 INFO 21108 [egg:core] dump config after ready, 5ms
+2021-06-20 15:28:13,777 INFO 1964 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:28:13,805 INFO 1964 [egg-multipart] stream mode enable
+2021-06-20 15:28:14,125 INFO 1964 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:28:14,128 INFO 1964 [egg-security] use methodnoallow middleware
+2021-06-20 15:28:14,129 INFO 1964 [egg-security] use noopen middleware
+2021-06-20 15:28:14,131 INFO 1964 [egg-security] use nosniff middleware
+2021-06-20 15:28:14,132 INFO 1964 [egg-security] use xssProtection middleware
+2021-06-20 15:28:14,133 INFO 1964 [egg-security] use xframe middleware
+2021-06-20 15:28:14,134 INFO 1964 [egg-security] use dta middleware
+2021-06-20 15:28:14,134 INFO 1964 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:28:14,175 INFO 1964 [egg:core] dump config after load, 4ms
+2021-06-20 15:28:14,218 INFO 1964 [egg-watcher:application] watcher start success
+2021-06-20 15:28:14,244 INFO 1964 [egg:core] dump config after ready, 7ms
+2021-06-20 15:28:16,092 INFO 17528 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:28:16,115 INFO 17528 [egg-multipart] stream mode enable
+2021-06-20 15:28:16,468 INFO 17528 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:28:16,470 INFO 17528 [egg-security] use methodnoallow middleware
+2021-06-20 15:28:16,471 INFO 17528 [egg-security] use noopen middleware
+2021-06-20 15:28:16,471 INFO 17528 [egg-security] use nosniff middleware
+2021-06-20 15:28:16,472 INFO 17528 [egg-security] use xssProtection middleware
+2021-06-20 15:28:16,472 INFO 17528 [egg-security] use xframe middleware
+2021-06-20 15:28:16,473 INFO 17528 [egg-security] use dta middleware
+2021-06-20 15:28:16,473 INFO 17528 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:28:16,500 INFO 17528 [egg:core] dump config after load, 4ms
+2021-06-20 15:28:16,530 INFO 17528 [egg-watcher:application] watcher start success
+2021-06-20 15:28:16,581 INFO 17528 [egg:core] dump config after ready, 11ms
+2021-06-20 15:56:49,725 INFO 1708 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:56:49,750 INFO 1708 [egg-multipart] stream mode enable
+2021-06-20 15:56:50,134 INFO 1708 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:56:50,136 INFO 1708 [egg-security] use methodnoallow middleware
+2021-06-20 15:56:50,136 INFO 1708 [egg-security] use noopen middleware
+2021-06-20 15:56:50,137 INFO 1708 [egg-security] use nosniff middleware
+2021-06-20 15:56:50,137 INFO 1708 [egg-security] use xssProtection middleware
+2021-06-20 15:56:50,138 INFO 1708 [egg-security] use xframe middleware
+2021-06-20 15:56:50,139 INFO 1708 [egg-security] use dta middleware
+2021-06-20 15:56:50,139 INFO 1708 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:56:50,169 INFO 1708 [egg:core] dump config after load, 6ms
+2021-06-20 15:56:50,197 INFO 1708 [egg-watcher:application] watcher start success
+2021-06-20 15:56:50,221 INFO 1708 [egg:core] dump config after ready, 7ms
+2021-06-20 15:56:51,407 INFO 15924 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 15:56:51,430 INFO 15924 [egg-multipart] stream mode enable
+2021-06-20 15:56:51,760 INFO 15924 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 15:56:51,762 INFO 15924 [egg-security] use methodnoallow middleware
+2021-06-20 15:56:51,762 INFO 15924 [egg-security] use noopen middleware
+2021-06-20 15:56:51,763 INFO 15924 [egg-security] use nosniff middleware
+2021-06-20 15:56:51,763 INFO 15924 [egg-security] use xssProtection middleware
+2021-06-20 15:56:51,764 INFO 15924 [egg-security] use xframe middleware
+2021-06-20 15:56:51,764 INFO 15924 [egg-security] use dta middleware
+2021-06-20 15:56:51,764 INFO 15924 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 15:56:51,792 INFO 15924 [egg:core] dump config after load, 5ms
+2021-06-20 15:56:51,820 INFO 15924 [egg-watcher:application] watcher start success
+2021-06-20 15:56:51,843 INFO 15924 [egg:core] dump config after ready, 5ms
+2021-06-20 16:11:18,161 INFO 21540 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 16:11:18,184 INFO 21540 [egg-multipart] stream mode enable
+2021-06-20 16:11:18,561 INFO 21540 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 16:11:18,563 INFO 21540 [egg-security] use methodnoallow middleware
+2021-06-20 16:11:18,564 INFO 21540 [egg-security] use noopen middleware
+2021-06-20 16:11:18,564 INFO 21540 [egg-security] use nosniff middleware
+2021-06-20 16:11:18,565 INFO 21540 [egg-security] use xssProtection middleware
+2021-06-20 16:11:18,565 INFO 21540 [egg-security] use xframe middleware
+2021-06-20 16:11:18,566 INFO 21540 [egg-security] use dta middleware
+2021-06-20 16:11:18,566 INFO 21540 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 16:11:18,603 INFO 21540 [egg:core] dump config after load, 5ms
+2021-06-20 16:11:18,629 INFO 21540 [egg-watcher:application] watcher start success
+2021-06-20 16:11:18,651 INFO 21540 [egg:core] dump config after ready, 5ms
+2021-06-20 16:11:19,434 INFO 14260 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 16:11:19,458 INFO 14260 [egg-multipart] stream mode enable
+2021-06-20 16:11:19,815 INFO 14260 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 16:11:19,817 INFO 14260 [egg-security] use methodnoallow middleware
+2021-06-20 16:11:19,817 INFO 14260 [egg-security] use noopen middleware
+2021-06-20 16:11:19,818 INFO 14260 [egg-security] use nosniff middleware
+2021-06-20 16:11:19,818 INFO 14260 [egg-security] use xssProtection middleware
+2021-06-20 16:11:19,818 INFO 14260 [egg-security] use xframe middleware
+2021-06-20 16:11:19,819 INFO 14260 [egg-security] use dta middleware
+2021-06-20 16:11:19,819 INFO 14260 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 16:11:19,848 INFO 14260 [egg:core] dump config after load, 5ms
+2021-06-20 16:11:19,877 INFO 14260 [egg-watcher:application] watcher start success
+2021-06-20 16:11:19,899 INFO 14260 [egg:core] dump config after ready, 5ms
+2021-06-20 16:11:20,909 INFO 14108 [egg:logger] init all loggers with options: {"dir":"G:\\project\\beauty\\logs\\beauty","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"beauty-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-06-20 16:11:20,932 INFO 14108 [egg-multipart] stream mode enable
+2021-06-20 16:11:21,324 INFO 14108 [egg-static] starting static serve /public/ -> G:\project\beauty\app\public
+2021-06-20 16:11:21,326 INFO 14108 [egg-security] use methodnoallow middleware
+2021-06-20 16:11:21,327 INFO 14108 [egg-security] use noopen middleware
+2021-06-20 16:11:21,327 INFO 14108 [egg-security] use nosniff middleware
+2021-06-20 16:11:21,328 INFO 14108 [egg-security] use xssProtection middleware
+2021-06-20 16:11:21,328 INFO 14108 [egg-security] use xframe middleware
+2021-06-20 16:11:21,329 INFO 14108 [egg-security] use dta middleware
+2021-06-20 16:11:21,329 INFO 14108 [egg-security] compose 6 middlewares into one security middleware
+2021-06-20 16:11:21,364 INFO 14108 [egg:core] dump config after load, 10ms
+2021-06-20 16:11:21,424 INFO 14108 [egg-watcher:application] watcher start success
+2021-06-20 16:11:21,461 INFO 14108 [egg:core] dump config after ready, 8ms
